@@ -1,0 +1,18 @@
+#content div.slogan{
+	filter:expression(fixPNG(this));
+}
+#menu {
+	margin-top:expression(((valign.offsetHeight/2)-parseInt(offsetHeight)/2)<0 ? "0" :(valign.offsetHeight/2)-(parseInt(offsetHeight)/2) +'px');
+}
+#menu li img{
+	left:-70px;
+}
+#menu li.m10 img{
+	left:-56px;
+}
+#menu-in li img{
+	left:-70px;
+}
+#menu-in li.m10 img{
+	left:-56px;
+}

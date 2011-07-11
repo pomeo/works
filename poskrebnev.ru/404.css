@@ -1,0 +1,21 @@
+body,html {
+	background-color:#FFF;
+}
+#hand{
+	width:531px;
+	height:405px;
+	background:url(images/top/hand_404.png) no-repeat;
+	position:absolute;
+	left:0px;
+	top:151px;
+	z-index:600;
+}
+a{
+	display:block;
+	width:235px;
+	height:135px;
+	position:absolute;
+	top:151px;
+	left:295px;
+	z-index:700;
+}

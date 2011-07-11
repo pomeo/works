@@ -1,0 +1,128 @@
+html,body {
+	height:100%;
+	padding:0px;
+	margin:0px;
+	background-image:url(images/background.jpg);
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:12px;
+	color:#666666;
+}
+img {
+	border:none;
+}
+a {
+	color:#333333;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+p {
+	margin-top:0px;
+}
+/****************top****************/
+#top {
+	height:150px;
+	width:900px;
+	background-image:url(images/back_top.jpg);
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+	position:relative;
+}
+#logo {
+	display:block;
+	background-image:url(images/logo.jpg);
+	width:127px;
+	height:96px;
+	background-repeat:no-repeat;
+	position:absolute;
+	left:50px;
+	top:20px;
+}
+#top h1.projects{
+	padding:0px;
+	margin:0px;
+	font-size:16px;
+	color:#FFFFFF;
+	font-weight:normal;
+	background-color:#666666;
+	padding:20px 112px;
+	position:absolute;
+	right:-8px;
+	bottom:-44px;
+}
+#top h4{
+	padding:0px;
+	margin:0px;
+	font-size:24px;
+	font-weight:normal;
+	position:absolute;
+	right:80px;
+	top:35px;
+}
+#top ul{
+	list-style:none;
+	margin:0px;
+	padding:0px;
+	position:absolute;
+	bottom:-20px;
+	left:15px;
+}
+#top ul li{
+	display:inline;
+	padding-right:5px;
+	padding-left:4px;
+}
+#top ul li a{
+	color:#FFFFFF;
+	text-decoration:none;
+}
+#top ul li a:hover{
+	text-decoration:underline;
+}
+/****************end_top****************/
+/****************menu****************/
+#menu {
+	height:30px;
+	background-color:#909090;
+}
+/****************end_menu****************/
+/****************content****************/
+#content {
+	background-color:#F0F0F2;
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+	border-bottom:#CCCCCC 1px solid;
+	width:900px;
+	text-align:left;
+	overflow:hidden;
+}
+#content div.right_side {
+	float:right;
+	width:315px;
+	background-color:#CCCCCC;
+	margin-right:5px;
+	margin-bottom:5px;
+	text-align:center;
+	padding-top:20px;
+}
+#content div.right_side p{
+	padding:0px;
+	margin:0px;
+	padding-bottom:5px;
+}
+#content div.left_side {
+	margin-right:355px;
+	padding:15px;
+}
+#content p.images{
+	padding:0px;
+	margin:0px;
+	padding-bottom:3px;
+}
+#content p.images a{
+	text-decoration:none;
+}
+/****************end_content****************/
+/****************footer****************/
+/****************end_footer****************/

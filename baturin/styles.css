@@ -1,0 +1,248 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+html,body {
+	background:url(images/background.jpg) repeat right;
+	height:100%;
+	font-family:Tahoma;
+	font-size:12px;
+	color:#000;
+}
+img {
+	border:none;
+}
+a {
+	color:#c11;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+#main-block {
+	position:relative;
+	min-height:100%;
+	min-width:1000px;
+	z-index:70;
+}
+* html #main-block{
+	height:100%;
+}
+#main-block div.break-line{
+	height:221px;
+}
+#main-block div.break-line-inner{
+	height:93px;
+}
+/***********************top***********************/
+#top {
+	height:360px;
+	position:relative;
+	z-index:50;
+}
+#top.inner{
+	height:310px;
+}
+#top a.logo{
+	display:block;
+	width:386px;
+	height:277px;
+	background:url(images/top/logo.png) no-repeat;
+	position:absolute;
+	left:0px;
+	top:0px;
+	z-index:10;
+	filter:expression(fixPNG(this));
+}
+#top div.sputnik{
+	width:660px;
+	height:360px;
+	background:url(images/top/sputnik.png) no-repeat;
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:30;
+	filter:expression(fixPNG(this));
+}
+#top div.earth{
+	width:629px;
+	height:220px;
+	background:url(images/top/earth.png) no-repeat;
+	position:absolute;
+	top:0px;
+	right:0px;
+	z-index:30;
+	filter:expression(fixPNG(this));
+}
+/***********************end_top***********************/
+/***********************content***********************/
+#content {
+	position:relative;
+	z-index:100;
+}
+#left-side {
+	width:224px;
+	float:left;
+	position:relative;
+	z-index:1000;
+}
+#left-side div.menu-top{
+	width:223px;
+	height:55px;
+	background:url(images/content/menu_top.png) no-repeat;
+	filter:expression(fixPNG(this));
+	position:absolute;
+	left:0px;
+	top:-41px;
+}
+#left-side div.menu-bottom{
+	width:223px;
+	height:39px;
+	background:url(images/content/menu_bottom.png) no-repeat;
+	filter:expression(fixPNG(this));
+}
+#menu {
+	list-style:none;
+	padding-top:14px;
+}
+#menu li{
+	width:182px;
+	height:20px;
+	padding-top:4px;
+	padding-left:41px;
+	background:url(images/content/menu_back.gif) no-repeat;
+	text-transform:uppercase;
+	font-weight:bold;
+	position:relative;
+	z-index:100;
+}
+#menu li:hover{
+	background:url(images/content/menu_back_active.gif) no-repeat;
+}
+#menu li a{
+	color:#fff;
+}
+#menu li ul{
+	list-style:none;
+	display:none;
+	width:240px;
+	border:1px #fff solid;
+	border-bottom:none;
+	position:absolute;
+	top:-1px;
+	right:-242px;
+	z-index:1000;
+}
+#menu li:hover ul{
+	display:block;
+}
+#menu li ul li{
+	padding:0px;
+	text-transform:none;
+	font-weight:normal;
+	width:auto;
+	border-bottom:1px #fff solid;
+	height:25px;
+	padding-top:8px;
+	background:none;
+	background-color:#346;
+}
+#menu li ul li:hover{
+	background:none;
+	background-color:#679;
+}
+#menu li ul li a{
+	padding-left:16px;
+	background:url(images/content/menu_link.gif) no-repeat 0px 5px;
+}
+#menu li ul li ul{
+	width:288px;
+	right:-290px;
+}
+#menu li:hover ul li ul{
+	display:none;
+}
+#menu li:hover ul li:hover ul{
+	display:block;
+}
+#menu li:hover ul li:hover ul li ul{
+	display:none;
+}
+#menu li:hover ul li:hover ul li:hover ul{
+	display:block;
+}
+#body {
+	background-color:#fff;
+	margin-left:275px;
+	margin-right:25px;
+}
+#body div.top-left-corner{
+	background:url(images/content/corner_top_left.gif) no-repeat left top;
+}
+#body div.top-right-corner{
+	background:url(images/content/corner_top_right.gif) no-repeat right top;
+}
+#body div.bottom-left-corner{
+	background:url(images/content/corner_bottom_left.gif) no-repeat left bottom;
+}
+#body div.bottom-right-corner{
+	background:url(images/content/corner_bottom_right.gif) no-repeat right bottom;
+}
+#body div.text{
+	padding:20px;
+}
+#body div.text h2.headline{
+	color:#239;
+	font-size:14px;
+	padding-bottom:10px;
+}
+#body div.text p{
+	padding-bottom:10px;
+}
+/***********************end_content***********************/
+/***********************footer***********************/
+#footer {
+	clear:both;
+	height:221px;
+	margin-top:-221px;
+	position:relative;
+	min-width:1000px;
+	z-index:80;
+}
+#footer.inner {
+	height:93px;
+	margin-top:-93px;
+}
+#footer div.sputnik{
+	width:93px;
+	height:57px;
+	background:url(images/footer/sputnik.png) no-repeat;
+	position:absolute;
+	bottom:90px;
+	left:10%;
+	filter:expression(fixPNG(this));
+	z-index:500;
+}
+#footer div.earth{
+	width:744px;
+	height:188px;
+	background:url(images/footer/earth.png) no-repeat;
+	margin-left:-372px;
+	position:absolute;
+	bottom:0px;
+	left:50%;
+	filter:expression(fixPNG(this));
+	z-index:100;
+}
+#footer div.madeby{
+	font-size:11px;
+	color:#bbd;
+	position:absolute;
+	bottom:8px;
+	right:20px;
+}
+#footer div.madeby a{
+	color:#bbd;
+	font-weight:bold;
+}
+/***********************end_footer***********************/

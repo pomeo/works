@@ -1,0 +1,342 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+html,body {
+	font-family:Tahoma;
+	font-size:12px;
+	color:#333;
+	background-color:#fff;
+}
+img {
+	border:none;
+}
+a {
+	color:#333;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+#main-block {
+	min-width:988px;
+	margin:0px 12px 12px 12px;
+}
+/***********************top***********************/
+#top {
+	height:255px;
+}
+#top div.right-side{
+	height:255px;
+	width:232px;
+	float:right;
+	position:relative;
+}
+#top div.right-side div.keys{
+	background:url(images/top/keys.jpg) no-repeat;
+	width:186px;
+	height:196px;
+	position:absolute;
+	right:-12px;
+	top:10px;
+}
+#top div.right-side div.block-phone{
+	width:192px;
+	height:31px;
+	background-color:#a22;
+	position:absolute;
+	bottom:0px;
+	right:17px;
+}
+#top div.right-side div.block-phone img{
+	position:absolute;
+	left:27px;
+	top:5px;
+}
+#top div.right-side div.block-phone span{
+	font-size:16px;
+	font-weight:bold;
+	color:#fff;
+	position:absolute;
+	left:45px;
+	top:5px;
+}
+#top div.right-side div.phone-shadow{
+	background:url(images/top/shadow_phone.jpg) no-repeat;
+	width:18px;
+	height:31px;
+	position:absolute;
+	bottom:0px;
+	right:-1px;
+}
+#top div.right-side div.right-side-shadow{
+	background:url(images/top/right_side_shadow.jpg) no-repeat;
+	width:8px;
+	height:186px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#top div.wrapper{
+	height:255px;
+	margin-right:232px;
+}
+#top div.wrapper div.center{
+	height:255px;
+	width:286px;
+	float:right;
+	background:url(images/top/back_top_center.gif) repeat-x;
+	position:relative;
+}
+#top div.wrapper div.center div.autofart{
+	background:url(images/top/auto_fart.jpg) no-repeat;
+	width:238px;
+	height:46px;
+	position:absolute;
+	top:21px;
+	left:26px;
+}
+#top div.wrapper div.center ul{
+	list-style:none;
+	position:absolute;
+	left:24px;
+	top:98px;
+}
+#top div.wrapper div.center ul li{
+	padding-left:31px;
+	background:url(images/top/ok.gif) no-repeat left;
+	margin-bottom:15px;
+}
+#top div.wrapper div.center ul li a{
+	color:#fff;
+	font-weight:bold;
+	font-size:14px;
+}
+#top div.wrapper div.left-side{
+	height:247px;
+	margin-right:286px;
+	padding-top:8px;
+	position:relative;
+}
+#top div.wrapper div.left-side div.auto{
+	width:447px;
+	height:140px;
+	background:url(images/top/auto.jpg) no-repeat;
+	margin-left:-224px;
+	position:absolute;
+	left:50%;
+	bottom:17px;
+}
+#top div.wrapper div.left-side div.slogan{
+	border:1px solid #944;
+	padding:10px;
+	margin-right:19px;
+	color:#944;
+}
+#top div.wrapper div.left-side div.left-side-shadow{
+	background:url(images/top/left_side_shadow.jpg) no-repeat;
+	width:13px;
+	height:186px;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+/***********************end_top***********************/
+/***********************content***********************/
+#content {
+	border:1px solid #a22;
+	overflow:hidden;
+	background:url(images/content/back_content.gif) repeat-y right;
+}
+#content div.right-side{
+	width:231px;
+	float:right;
+	position:relative;
+}
+#content div.right-side div.otstup{
+	padding:10px;
+}
+#content div.right-side div.otstup div.reklama{
+	border:1px solid #333;
+	margin-top:20px;
+	text-align:center;
+}
+#menu {
+	margin-right:231px;
+	height:35px;
+	background:url(images/content/back_menu.gif) repeat-x;
+}
+#menu ul{
+	list-style:none;
+	padding-top:5px;
+	padding-left:35px;
+}
+#menu ul li{
+	float:left;
+	padding-left:12px;
+	background:url(images/content/menu_arrow.gif) no-repeat 0% 50%;
+	padding-right:15%;
+}
+#menu ul li.last{
+	padding-right:0px;
+}
+#menu ul li a{
+	font-size:15px;
+	font-weight:bold;
+	color:#fff;
+}
+#content div.wrapper{
+	margin-right:231px;
+}
+#content div.wrapper div.center{
+	width:286px;
+	float:right;
+	position:relative;
+}
+#content div.wrapper div.center div.title{
+	height:28px;
+	background:url(images/content/back_contacts.jpg) repeat-x;
+	width:286px;
+}
+#content div.wrapper div.center div.title h2{
+	font-size:12px;
+	font-weight:bold;
+	color:#000;
+	padding-left:24px;
+	padding-top:6px;
+}
+#cars{
+	width:286px;
+	overflow:hidden;
+}
+#cars a{
+	font-size:11px;
+	color:#eee;
+}
+#cars ul{
+	list-style:none;
+}
+#cars ul.col1{
+	padding:12px 0px 12px 41px;
+	float:left;
+}
+#cars ul.col2{
+	margin-left:165px;
+	padding:12px 0px;
+}
+#content div.wrapper div.left-side{
+	margin-right:286px;
+	position:relative;
+}
+#content div.wrapper div.left-side div.title{
+	height:28px;
+}
+#content div.wrapper div.left-side div.title h1{
+	font-weight:bold;
+	font-size:18px;
+	color:#944;
+	padding-left:10px;
+}
+#scroll {
+	overflow:auto;
+	height:500px;
+}
+#scroll div.car{
+	background-color:#F6F6F6;
+	padding:9px 9px 9px 9px;
+	overflow:hidden;
+	margin-bottom:8px;
+}
+#scroll div.car img{
+	float:left;
+	padding-left:20px;
+}
+#scroll div.car div.desc{
+	margin-left:195px;
+}
+#scroll div.car div.desc h4{
+	font-weight:bold;
+	font-size:14px;
+	padding-bottom:23px;
+}
+#scroll div.car div.desc h4 a{
+	color:#d22;
+}
+#scroll div.car div.desc p{
+	color:#444;
+}
+/***********************end_content***********************/
+/***********************footer***********************/
+#footer {
+	height:50px;
+	clear:both;
+}
+#footer div.right-side{
+	height:50px;
+	width:232px;
+	float:right;
+	position:relative;
+}
+#footer div.right-side div.block-email{
+	width:192px;
+	height:31px;
+	background-color:#a22;
+	position:absolute;
+	top:0px;
+	right:18px;
+}
+#footer div.right-side div.block-email img{
+	position:absolute;
+	left:27px;
+	top:10px;
+}
+#footer div.right-side div.block-email a{
+	font-size:14px;
+	color:#fff;
+	position:absolute;
+	left:52px;
+	top:5px;
+}
+#footer div.right-side div.shadow-email{
+	background:url(images/footer/shadow_email.jpg) no-repeat;
+	width:18px;
+	height:31px;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+#footer div.wrapper{
+	height:50px;
+	margin-right:232px;
+}
+#footer div.wrapper div.center{
+	height:51px;
+	width:286px;
+	float:right;
+	background:url(images/footer/back_footer_center.jpg) repeat-x;
+	position:relative;
+	top:-1px;
+}
+#footer div.wrapper div.center p{
+	color:#FFFEFE;
+	position:absolute;
+	left:13px;
+	top:17px;
+}
+#footer div.wrapper div.center p a{
+	color:#FFFEFE;
+	font-weight:bold;
+}
+#footer div.wrapper div.left-side{
+	height:50px;
+	margin-right:286px;
+	padding-top:8px;
+	position:relative;
+}
+#footer div.wrapper div.left-side div.copyright{
+	color:#333;
+	position:absolute;
+	left:0px;
+	top:15px;
+}
+/***********************end_footer***********************/

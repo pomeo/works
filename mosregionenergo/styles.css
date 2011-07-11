@@ -1,0 +1,310 @@
+html,body {
+	background-color:#FFFFFF;
+	padding:0px;
+	margin:0px;
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:12px;
+	color:#4A676F;
+}
+img {
+	border:none;
+}
+a {
+	font-family:Tahoma, Verdana, Helvetica;
+	color:#0DA5D7;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+h4 {
+	font-size:12px;
+}
+p {
+	margin-top:0px;
+}
+/***********************top***********************/
+#top {
+	padding:20px 30px 0px 30px;
+	min-width:940px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 940? "940px": "auto");
+}
+#top div.logo_block {
+	height:141px;
+	background-color:#B42134;
+}
+#logo {
+	margin:0px;
+	padding:0px;
+	background-image:url(images/top/back_logo.jpg);
+	width:692px;
+	height:97px;
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:22px;
+	color:#FEFEFE;
+	font-weight:normal;
+	letter-spacing:3px;
+	padding-left:42px;
+	padding-top:44px;
+}
+#logo strong{
+	font-size:31px;
+	font-weight:normal;
+	letter-spacing:normal;
+}
+#top div.menu_block {
+	height:36px;
+	background-color:#FCEDC6;
+	border-top:#FFFFFF 1px solid;
+}
+#menu {
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	margin-left:26px;
+	margin-top:7px;
+}
+#menu li{
+	float:left;
+}
+#menu li a{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:14px;
+	color:#000000;
+	background-image:url(images/top/menu_dotted_line.gif);
+	background-repeat:no-repeat;
+	background-position:right center;
+	padding-bottom:5px;
+	padding-right:15px;
+	padding-left:14px;
+}
+#menu li a.last{
+	background-image:none;
+}
+/***********************end_top***********************/
+/***********************content***********************/
+#content {
+	padding:50px 30px 0px 30px;
+	min-width:940px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 940? "940px": "auto");
+}
+#left_side {
+	width:260px;
+	padding-left:40px;
+	padding-right:40px;
+	float:left;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#left_side h2.headline{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#000000;
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+	padding-bottom:25px;
+}
+#left_side p.date{
+	margin-bottom:5px;
+	width:80px;
+	text-align:center;
+	font-size:12px;
+	color:#0F4F62;
+	font-weight:bold;
+	background-color:#FCEDC6;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+#left_side p.arch {
+	background-color:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+}
+#left_side h4.headline{
+	padding:0px;
+	margin:0px;
+	margin-bottom:7px;
+}
+#left_side p.text{
+	margin-bottom:30px;
+}
+#left_side p.text_arch{
+}
+#left_side div.otstup{
+	height:27px;
+}
+#text {
+	margin-left:340px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#text h2.headline{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:25px;
+	color:#000000;
+	font-weight:normal;
+	margin:0px;
+	padding:0px;
+	padding-bottom:25px;
+}
+#text div.pages{
+	color:#000000;
+	margin-bottom:15px;
+}
+#text div.pages a{
+	padding-left:4px;
+	padding-right:4px;
+	text-decoration:none;
+}
+#text div.pages a:hover{
+	text-decoration:underline;
+}
+#text div.headline {
+	margin-bottom:5px;
+}
+#text div.headline span{
+	color:#0F4F62;
+	font-weight:bold;
+}
+#text div.headline h4{
+	display:inline;
+	margin-left:5px;
+}
+#text div.to_begin{
+	text-align:right;
+	background-image:url(images/content/dotted.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding-bottom:3px;
+	margin-bottom:40px;
+}
+#text div.to_begin a{
+	font-weight:bold;
+	color:#0F4F62;
+	text-decoration:none;
+}
+#text div.to_begin a:hover{
+	text-decoration:underline;
+}
+#bottom {
+	margin-top:-30px;
+}
+#docs {
+	background-image:url(images/content/dotted.gif);
+	background-repeat:repeat-x;
+	background-position:bottom;
+	padding-left:40px;
+	padding-bottom:40px;
+}
+#docs div.file{
+	color:#808080;
+	position:relative;
+}
+#docs div.file img{
+	float:left;
+	padding-right:15px;
+}
+#docs div.file p{
+}
+#docs div.file p strong{
+	font-weight:normal;
+	color:#000000;
+}
+#docs div.file a.download{
+	display:block;
+	font-weight:bold;
+	margin-left:230px;
+	position:absolute;
+	top:15px;
+}
+#docs img.contact{
+	border:#B42134 2px solid;
+}
+#docs p.adres{
+	margin-top:20px;
+	margin-bottom:20px;
+}
+form#mail_form {
+	width:545px;
+	padding:0px;
+	margin:0px;
+	padding-bottom:20px;
+	padding-right:6px;
+}
+form#mail_form label{
+	display:block;
+	text-align:right;
+	color:#242424;
+	font-weight:bold;
+}
+form#mail_form label span{
+	font-size:16px;
+	font-weight:bold;
+	margin-right:-6px;
+}
+form#mail_form label input{
+	width:310px;
+	border:1px #000000 solid;
+	background-color:#F8F8F8;
+	margin-bottom:1px;
+	vertical-align:middle;
+}
+form#mail_form label textarea{
+	width:310px;
+	vertical-align:top;
+	border:1px #000000 solid;
+	background-color:#F8F8F8;
+	margin-bottom:1px;
+}
+form#mail_form label.button{
+	padding-top:22px;
+}
+form#mail_form label.button input{
+	width:110px;
+	color:#242424;
+	font-size:9px;
+	margin-left:60px;
+}
+/***********************end_content***********************/
+/***********************footer***********************/
+#footer {
+	height:80px;
+	clear:both;
+	padding:20px 30px 20px 70px;
+	min-width:900px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 900? "900px": "auto");
+	position:relative;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	color:#4A676F;
+}
+#footer div.copyright{
+	font-size:11px;
+	position:absolute;
+	left:70px;
+	top:45px;
+}
+#footer div.block_designby{
+	height:80px;
+	margin-left:300px;
+	background-color:#FCEDC6;
+	position:relative;
+}
+#footer div.block_designby a.logo{
+	display:block;
+	background-image:url(images/footer/logo.jpg);
+	width:99px;
+	height:40px;
+	position:absolute;
+	left:30px;
+	top:22px;
+}
+#footer div.block_designby p{
+	font-size:10px;
+	position:absolute;
+	left:140px;
+	top:30px;
+}
+#footer div.block_designby p a{
+	text-decoration:none;
+}
+/***********************end_footer***********************/

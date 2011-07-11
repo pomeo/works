@@ -1,0 +1,365 @@
+body {
+	margin:0px;
+	padding:0px;
+	color:#575F6A;
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:11px;
+	border:0px;
+	background-color:#FFFFFF;
+}
+a {
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:10px;
+	color:#575F6A;
+	font-weight:bold;
+	text-decoration:none;
+}
+a:hover {
+	text-decoration:underline;
+}
+table {
+	border:0px;
+	border-collapse:collapse;
+	border-color:#DADADA;
+}
+table td{
+	padding:0px;
+	vertical-align:top;
+	border-color:#DADADA;
+}
+#tooltip {
+    background: White;
+    color: #737373;
+    border: 1px solid #E3E3E3;
+    text-align: justify;
+    font: 11px Tahoma, Helvetica,sans-serif;
+    margin: 14px 0;
+    padding: 5px 5px;
+    position:absolute;
+    visibility:hidden
+}
+h3 {
+	font-size:12px;
+}
+img {
+	border:0px;
+}
+/*top*/
+.top {
+	height:80px;
+}
+.top td {
+	vertical-align:middle;
+}
+.logo_block {
+}
+.logo {
+	width:300px;
+	height:60px;
+}
+.banners {
+	width:100%;
+	text-align:center;
+}
+.search_site {
+	width:250px;
+	text-align:center;
+}
+.search_ftp {
+	width:235px;
+	padding-left:30px;
+	text-align:center;
+	padding-right:30px;
+}
+.banner {
+}
+.search_site_text {
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:11px;
+	width:120px;
+	height:12px;
+}
+.search_site_button {
+	cursor:pointer;
+	margin-bottom:-10px;
+	padding-left:5px;
+}
+.search_ftp_text {
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:11px;
+	width:120px;
+	height:12px;
+}
+.search_ftp_button {
+	cursor:pointer;
+	margin-bottom:-10px;
+	padding-left:5px;
+}
+/*end_top*/
+/*menu*/
+.topnav li{
+	list-style-image:url(assets/images/menu/arrow.png);
+	margin-left:-10px;
+	margin-bottom:5px;
+}
+.topnav a{
+	font-size:12px;
+	font-weight:500;
+}
+.hoverZone {
+	margin-top:5px;
+	margin-left:-15px;
+}
+.block_menu {
+	width:150px;
+	padding-right:10px;
+}
+/*end_menu*/
+/*content*/
+.send_sms {
+	background-image:url(assets/images/send_sms.png);
+	width:120px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:10px;
+}
+.phone_support {
+	background-image:url(assets/images/support.png);
+	width:120px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:10px;
+}
+.phone1 {
+	background-image:url(assets/images/phone/1.png);
+	width:140px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:15px;
+	margin-top:10px;
+}
+.phone2 {
+	background-image:url(assets/images/phone/2.png);
+	width:140px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:15px;
+	margin-top:5px;
+}
+.phone3 {
+	background-image:url(assets/images/phone/3.png);
+	width:140px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:15px;
+	margin-top:5px;
+}
+.phone4 {
+	background-image:url(assets/images/phone/4.png);
+	width:140px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:15px;
+	margin-top:5px;
+	margin-bottom:10px;
+}
+.news_text {
+	padding:0 20px 0 20px;
+}
+.right_table_images {
+	margin-right:30px;
+}
+.news_link{
+	font-size:12px;
+}
+.news_date {
+	font-size:11px;
+	color:#CCCCCC;
+	font-weight:normal;
+}
+.column_news {
+	width:100%;
+}
+.column_first {
+	width:250px;
+	float:left;
+	margin-right:30px;
+}
+.column_with_images {
+	width:545px;
+	height:100%;
+}
+.column_second {
+	width:235px;
+	float:right;
+	margin-right:30px;
+}
+.column_menu {
+	width:150px;
+}
+.news_headline {
+	background-image:url(assets/images/news_lan.png);
+	width:120px;
+	height:18px;
+}
+.forum {
+	width:250px;
+	height:150px;
+}
+.blogs {
+	width:235px;
+	height:150px;
+}
+.films {
+	width:250px;
+	height:150px;
+}
+.progs {
+	width:235px;
+	height:150px;
+}
+.bottom_border_250 {
+	width:250px;
+	height:9px;
+	background-image:url(assets/images/bottom_border_250.png);
+	background-repeat:no-repeat;
+	margin-bottom:30px;
+}
+.bottom_border_235 {
+	width:235px;
+	height:9px;
+	background-image:url(assets/images/bottom_border_235.png);
+	background-repeat:no-repeat;
+}
+.content_under_image_first_column {
+	width:248px;
+	border-left:1px solid #DADADA;
+	border-right:1px solid #DADADA;
+	padding-top:5px;
+}
+.content_under_image_second_column {
+	width:233px;
+	border-left:1px solid #DADADA;
+	border-right:1px solid #DADADA;
+	padding-top:5px;
+}
+.beeline {
+	width:71px;
+	height:20px;
+	margin-left:20px;
+	margin-top:5px;
+}
+.mts {
+	width:65px;
+	height:20px;
+	margin-left:20px;
+	margin-top:5px;
+}
+.megafon {
+	width:92px;
+	height:19px;
+	margin-left:20px;
+	margin-top:5px;
+}
+.chat_download {
+	margin-top:10px;
+}
+/*end_content*/
+/*right_content*/
+.list_first_line {
+	margin:0 7px 0 7px;
+}
+.list_second_line {
+	margin-left:20px;
+}
+.list_third_line {
+	margin-left:20px;
+}
+.list_number {
+	color:#FFA031;
+}
+/*end_right_content*/
+/*bottom*/
+.bottom td{
+	text-align:center;
+	vertical-align:middle;
+	height:70px;
+}
+.design_by {
+	width:235px;
+	padding-left:30px;
+	padding-right:30px;
+}
+.banner3 {
+	width:250px;
+}
+.banner2 {
+}
+.copyright {
+	width:220px;
+	text-align:left;
+	padding-left:10px;
+}
+.licence {
+	margin-top:5px;
+}
+/*end_bottom*/
+/*main_content*/
+.headline_content {
+	height:18px;
+	font-size:14px;
+}
+.content {
+	padding:10px 10px 10px 10px;
+}
+.here {
+	font-weight:bold;
+}
+/*end_main_content*/
+/*search*/
+        #ajaxSearch_form {
+            color: #444;
+            width: auto;
+        }
+        #ajaxSearch_input {
+            width: auto;
+            display: inline;
+            height: 17px;
+            border: 1px solid #ddd;
+            border-left-color: #c3c3c3;
+            border-top-color: #7c7c7c;
+            background: #fff url(images/input-bg.gif) repeat-x top left;
+            margin: 0 3px 0 0;
+            padding: 3px 0 0;
+            vertical-align: top;
+        }
+        #ajaxSearch_submit {
+            display: inline;
+            height: 22px;
+            line-height: 22px;
+        }
+        #ajaxSearch_output {
+            border: 1px solid #444;
+            padding: 10px;
+            background: #fff;
+            display: block;
+            height: auto;
+            vertical-align: top;
+        }
+        .ajaxSearch_paging {
+    
+        }
+        .AS_ajax_result {
+            color: #444;
+            margin-bottom: 3px;
+        }
+        .AS_ajax_resultLink {
+            text-decoration: underline;
+        }
+        .AS_ajax_resultDescription{
+            color: #555;
+        }
+        .AS_ajax_more {
+            color: #555;
+        }
+/*end_search*/

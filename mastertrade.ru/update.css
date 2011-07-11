@@ -1,0 +1,15 @@
+#t-cat {
+	border:1px #000 solid;
+}
+#t-cat tr.headline{
+	background-color:#A5A5A5;
+}
+#t-cat tr.headline td{
+	color:#FFF;
+}
+#t-cat td{
+	text-align:center;
+	color:#000;
+	border:1px #000 solid;
+	padding:2px 5px;
+}

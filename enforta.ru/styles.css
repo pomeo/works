@@ -1,0 +1,234 @@
+html, body {
+	padding:0px;
+	margin:0px;
+	background-color:#FFFFFF;
+	width:100%;
+	height:100%;
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:12px;
+	color:#003366;
+}
+table {
+	border:0px;
+	border-collapse:collapse;
+}
+table td{
+	padding:0px;
+	vertical-align:top;
+}
+img {
+	border:0px;
+}
+ul,form {
+	padding:0px;
+	margin:0px;
+}
+a {
+	color:#FF6600;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+object {
+	border:0px;
+}
+/********************top********************/
+#top {
+	height:168px;
+	background-image:url(assets/images/top/logo.jpg);
+	background-repeat:no-repeat;
+	min-width:1010px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 1010? "1010px": "auto");
+}
+#top .otstup{
+	height:35px;
+}
+#top .banner_top{
+	background-color:#F96400;
+	height:87px;
+	text-align:center;
+	position:relative;
+	margin-left:279px;
+}
+#top .banner_top .banner{
+	/*padding-top:13px;*/
+	width:100%;
+}
+#icons {
+	position:absolute;
+	top:140px;
+	left:105px;
+}
+#icons a{
+	margin-right:14px;
+}
+/********************end_top********************/
+/********************content********************/
+#content {
+	min-width:1010px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 1010? "1010px": "auto");
+}
+#content .left{
+	width:282px;
+	float:left;
+}
+#menu {
+	list-style:none;
+	margin-left:52px;
+	margin-top:26px;
+}
+#menu li{
+	margin-bottom:7px;
+}
+#banner_left {
+	margin-left:37px;
+	margin-top:20px;
+	margin-bottom:20px;
+}
+#content .left .private_room{
+	margin-left:37px;
+	margin-top:20px;
+}
+#content .right{
+	width:70%;
+	float:left;
+	margin-right:-282px;
+}
+#uslugi{
+	width:723px;
+	height:363px;
+	position:relative;
+}
+#uslugi .internet{
+	background-image:url(assets/images/content/enfort.internet.jpg);
+	width:352px;
+	height:180px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#uslugi .phone{
+	background-image:url(assets/images/content/enfort.telefon.jpg);
+	width:352px;
+	height:183px;
+	background-repeat:no-repeat;
+	position:absolute;
+	top:-2px;
+	right:0px;
+}
+#uslugi .lan{
+	background-image:url(assets/images/content/enfort.vasha_set.jpg);
+	width:352px;
+	height:180px;
+	background-repeat:no-repeat;
+	position:absolute;
+	bottom:0px;
+	left:0px;
+}
+#uslugi .atel{
+	background-image:url(assets/images/content/enfort.atel.jpg);
+	width:352px;
+	height:180px;
+	background-repeat:no-repeat;
+	position:absolute;
+	right:0px;
+	bottom:0px;
+}
+#uslugi div.box{
+	list-style:none;
+	font-size:10px;
+	position:absolute;
+	left:170px;
+	top:50px;
+}
+#uslugi .more{
+	position:absolute;
+	bottom:12px;
+	right:42px;
+	font-weight:bold;
+}
+#uslugi .atel div.box{
+	position:absolute;
+	left:190px;
+	top:50px;
+}
+#content .right .headline_news{
+	width:723px;
+	text-align:right;
+	margin-top:42px;
+}
+#content .right .news{
+	margin-left:69px;
+	margin-top:20px;
+}
+#content .right .news div{
+	margin-bottom:7px;
+}
+#content .right .news .date{
+	color:#F85601;
+	font-weight:bold;
+	position:absolute;
+	left:282px;
+}
+#content .right .news a{
+	text-decoration:none;
+	color:#003366;
+}
+/********************end_content********************/
+/********************footer********************/
+#footer {
+	height:90px;
+	min-width:1010px;
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 1010? "1010px": "auto");
+	position:relative;
+	clear:both;
+}
+#footer .wave{
+	background-image:url(assets/images/footer/wave.jpg);
+	width:185px;
+	height:90px;
+	float:right;
+}
+#footer .block_counter{
+	height:90px;
+	position:absolute;
+	top:0px;
+	left:279px;
+}
+#footer .go_to_top{
+	margin-left:6px;
+	margin-top:16px;
+	margin-bottom:16px;
+}
+#footer .go_to_top a{
+	color:#003366;
+	margin-left:6px;
+	text-decoration:underline;
+}
+#footer .go_to_top a:hover{
+	text-decoration:none;
+}
+#footer .line{
+	background-color:#285280;
+	height:1px;
+	width:99%;
+	font-size:0px;
+	position:absolute;
+	top:38px;
+	left:0px;
+	/*left:282px;*/
+	z-index:50;
+}
+#footer .line_cross{
+	background-color:#FFFFFF;
+	height:1px;
+	width:282px;
+	font-size:0px;
+	position:absolute;
+	top:38px;
+	left:0px;
+	z-index:51;
+}
+/********************end_footer********************/

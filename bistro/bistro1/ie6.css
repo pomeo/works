@@ -1,0 +1,36 @@
+div.right-shadow {
+	background:none;
+}
+div.left-shadow {
+	background:none;
+}
+#top-shadow {
+	background:none;
+}
+#top div.left-corner{
+	display:none;
+}
+#top div.right-corner{
+	display:none;
+}
+#top div.right-shadow{
+	display:none;
+}
+#top div.left-shadow{
+	display:none;
+}
+#bottom-shadow {
+	background:none;
+}
+#footer div.left-corner{
+	display:none;
+}
+#footer div.right-corner{
+	display:none;
+}
+#footer div.right-shadow{
+	display:none;
+}
+#footer div.left-shadow{
+	display:none;
+}

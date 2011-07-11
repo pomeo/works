@@ -1,0 +1,9 @@
+#sidebar div.sidebar-menu{
+	margin-left:230px;
+}
+#sidebar-menu li{
+	padding-right:6px;
+}
+#main-block.inner div#content div#sidebar div.sidebar-menu ul#sidebar-menu li{
+	padding-right:0px;
+}

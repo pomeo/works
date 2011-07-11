@@ -1,0 +1,256 @@
+body {
+	background-image:url(assets/images/background.png);
+	margin:0px;
+	padding:0px;
+	color:#FFFFFF;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+}
+table {
+	border:0px;
+	border-collapse:collapse;
+}
+table td{
+	padding:0px;
+}
+b {color:#FFFFFF}
+img,div { filter:expression(fixPNG(this)) }
+form {
+	margin:0px;
+	padding:0px;
+}
+a {
+	color:#FFFFFF;
+}
+.top {
+	background-image:url(assets/images/top_back.png);
+	height:140px;
+	width:100%;
+	background-repeat:repeat-x;
+	position:relative;
+	z-index:0;
+}
+.top_gradiend {
+	background-image:url(assets/images/top_gradient.png);
+	width:930px;
+	height:78px;
+	margin-top:62px;
+	position:absolute;
+	left:70px;
+	margin-left:5%;
+	top:0px;
+	z-index:1;
+}
+.top_text_center {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:14px;
+	font-style:italic;
+	color:#FFFFFF;
+	width:230px;
+	height:76px;
+	position:absolute;
+	top:30px;
+	left:450px;
+	z-index:60;
+	margin-left:5%;
+}
+.top_icons {
+	width:170px;
+	height:33px;
+	background-color:#073083;
+	top:0px;
+	right:0px;
+	position:absolute;
+	z-index:60;
+}
+.left_top_line {
+	width:14px;
+	height:135px;
+	position:absolute;
+	top:-140px;
+	left:0px;
+	z-index:20;
+}
+.right_top_line {
+	width:14px;
+	height:135px;
+	position:absolute;
+	right:10px;
+	top:-140px;
+	z-index:20;
+}
+.icon_home {
+	padding:10px 0 0 15px;
+	width:11px;
+	height:10px;
+}
+.icon_mail {
+	padding:10px 45px 0 45px;
+	width:12px;
+	height:10px;
+}
+.icon_map {
+	padding:10px 0 0 0;
+	width:17px;
+	height:10px;
+}
+.logo {
+	width:236px;
+	height:99px;
+	position:absolute;
+	top:21px;
+	left:40px;
+	z-index:100;
+}
+.logo_img {
+	width:235px;
+	height:96px;
+}
+.under_top {
+	background-image:url(assets/images/back_under_center.png);
+	height:255px;
+	width:100%;
+	background-repeat:repeat-x;
+}
+.under_home_img {
+	width:192px;
+	height:53px;
+	position:absolute;
+	left:0;
+	top:272px;
+	z-index:190;
+}
+.home {
+	width:82px;
+	height:343px;
+	position:absolute;
+	left:0;
+	top:0;
+	z-index:200;
+}
+.home_div {
+	width:85px;
+	height:255px;
+	position:relative;
+}
+.center_image {
+	background-image:url(assets/images/center_image.png);
+	width:502px;
+	height:251px;
+	margin-bottom:5px;
+	position:relative;
+	z-index:15;
+}
+.right_content{
+	vertical-align:top;
+}
+.content {
+	padding:70px 15px 15px 55px;
+}
+.rezina {
+	width:100%;
+	vertical-align:top;
+}
+.right_side_content {
+	width:285px;
+	position:relative;
+	height:80px;
+}
+.right_side_content_img {
+	width:137px;
+	height:53px;
+	position:absolute;
+	top:17px;
+	left:0px;
+	z-index:50;
+}
+.right_side_news {
+	margin-top:-30px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	padding:0 30px 0 30px;
+}
+.menu {
+	width:170px;
+}
+.right_side_menu {
+	height:110px;
+	padding-right:80px;
+}
+.right_side_content_img2 {
+	width:137px;
+	height:53px;
+	position:absolute;
+	top:0px;
+	left:0px;
+	z-index:50;
+}
+.down_gradient {
+	position:absolute;
+	width:550px;
+	height:57px;
+	top:0px;
+	left:0px;
+	z-index:0;
+}
+.footer {
+	background-image:url(assets/images/back_footer.png);
+	height:152px;
+	width:100%;
+	background-repeat:repeat-x;
+}
+.rel {
+	height:152px;
+	position:relative;
+}
+.designby {
+	width:250px;
+}
+.search_bottom {
+	background-image:url(assets/images/back_search.png);
+	width:250px;
+	height:32px;
+	text-align:center;
+}
+.search_bottom form {
+	margin-top:4px;
+}
+.search_site_text {
+	margin-top:4px;
+}
+.search_site_button {
+	margin-bottom:-3px;
+}
+.artprioritet {
+	padding:0 0 0 60px;
+}
+.artprioritet_img {
+	width:60px;
+	height:18px;
+}
+.razrabotano {
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+}
+.razrabotano a{
+	text-decoration:none;
+}
+.copyright {
+	text-align:center;
+	width:100%;
+}
+.copyright div{
+	color:#FFFFFF;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:9px;
+}
+.block_search {
+	background-image:url(assets/images/back_search.png);
+	width:250px;
+	height:32px;
+	text-align:center;
+	position:relative;
+}
+.searchform {
+}

@@ -1,0 +1,11 @@
+#top div.block-top a.form{
+	background:url(images/top/icon.gif) no-repeat 0px 2px;
+}
+#foto div.shadow{
+	position:relative;
+	padding-bottom:6px;
+	background:url(images/content/shadow.jpg) no-repeat bottom right;
+}
+div.rss a.sub{
+	background:url(images/content/icon_news.gif) no-repeat 0px 2px;
+}

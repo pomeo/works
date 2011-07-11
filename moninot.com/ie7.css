@@ -1,0 +1,3 @@
+#menu {
+	margin-top:expression(((valign.offsetHeight/2)-parseInt(offsetHeight)/2)<0 ? "0" :(valign.offsetHeight/2)-(parseInt(offsetHeight)/2) +'px');
+}

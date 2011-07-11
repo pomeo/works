@@ -1,0 +1,2469 @@
+/*
+	@author Ilya Furman smashlong@gmail.com
+*/
+
+/* commons */
+* {
+	margin: 0;
+	padding: 0;
+}
+html, body {
+
+}
+
+/* fonts */
+body {
+	color: #363636;
+	background-color: #FFF;
+	font: normal 62.5% "Arial", sans-serif;
+}
+fieldset {
+	border: none;
+}
+input, select {
+	font: normal 1.0em "Arial", sans-serif;
+}
+input.checkbox,
+input.radio {
+	width: 16px;
+	height: 16px;
+}
+p {
+	font-size: 1.2em;
+}
+
+h1 {
+	font-size: 2.3em;
+	font-weight: normal;
+}
+h2 {
+	font-size: 2.3em;
+	font-weight: normal;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5 {
+	font-size: 1.1em;
+}
+a,
+.linkLike {
+	color: #195CAB;
+}
+a:hover {
+
+}
+
+
+/* common elements */
+img {
+	border: none;
+}
+.clear {
+	clear: both;
+	font-size: 0;
+}
+.nobr,
+.nowrap {
+  white-space: nowrap;
+}
+a.inPage,
+a.inPage:hover {
+	border-bottom: 1px dotted #195CAB;
+	text-decoration: none;
+}
+.service {
+	color: #363636;
+	font-size: 1.2em;
+}
+a.help {
+	display: -moz-inline-box;
+	display: inline-block;
+	vertical-align: middle;
+	width: 12px;
+	height: 12px;
+	margin: 0 0.25em !important;
+	background: url(/images/base/mainIcons.gif) no-repeat -36px 0px;
+}
+a.gps,
+span.gps {
+	padding: 15px 0;
+	padding-left: 48px;
+	background: url(/images/base/gps.gif) center left no-repeat;
+}
+.linkLike {
+	text-decoration: underline;
+}
+
+
+/* dash marked list */
+ul.dashMarked,
+.textContent ul
+{
+	list-style: none;
+	margin-left: 2.35em;
+}
+ul.dashMarked li,
+.textContent ul li
+{
+	margin: 0.3em 0;
+}
+ul.dashMarked li span.mdash,
+.textContent ul li span.mdash
+{ /*keep 1em module diff between margins */
+	margin-left: -2.3em;
+	margin-right: 1.3em;
+}
+
+/* tilde marked list */
+ul.plus {
+	margin-bottom: 40px;
+}
+ul.plus li {
+	margin: .6em 0 !important;
+}
+ul.plus li span.mdash { /*keep 1em module diff between margins */
+	margin-left: -1.0em;
+	margin-right: 0.4em;
+	color: #519d43;
+	font-weight: bold;
+}
+ul.plusMinus li span.mdash {
+	color: #c90a00;
+}
+
+.ruswlists, .abcswlists, .wfullswlists, .fullswlists, .simpleswlists {
+	display: none;
+}
+
+/* hanging punctuation */
+span.hlaquo {
+	margin-right: 0.55em;
+}
+span.laquo {
+	margin-left: -0.55em;
+	vertical-align: top;
+}
+span.raquo {
+}
+.hideText {
+	display: none;
+}
+.sup {
+	position: relative;
+}
+sup {
+	position: relative;
+	top: -.5em;
+	vertical-align: bottom;
+}
+
+/* global navigation */
+.globalNav {
+	display: block;
+	width: 12px;
+	height: 12px;
+	text-indent: -32768px;
+	overflow: hidden;
+}
+.globalNavHome {
+	background: url(/images/base/mainIcons.gif) no-repeat 0px 0px;
+}
+.globalNavSearch {
+	background: url(/images/base/mainIcons.gif) no-repeat -12px 0px;
+}
+.globalNavMap {
+	background: url(/images/base/mainIcons.gif) no-repeat -24px 0px;
+}
+
+
+/* alert red label */
+.alertLabel {
+	margin-left: 0.5em;
+	padding: 4px 0;
+	padding-left: 5px;
+	background: url(/images/base/alertLabelLeftDoor.gif) center left no-repeat;
+	white-space: nowrap;
+	vertical-align: top;
+	position: relative;
+	top: 4px;
+}
+.alertLabel span {
+	position: relative;
+	top: -1px;
+	padding: 1px 0 2px 0;
+	padding-right: 5px;
+	background: url(/images/base/alertLabelRightDoor.gif) center right no-repeat;
+	color: #FFF;
+	font-size: 1.1em;
+	vertical-align: top;
+}
+
+/* top menu */
+dl.menu {
+	position: relative;
+}
+dl.menu dt {
+	font-size: 1.9em;
+	margin-bottom: 0.7em;
+}
+dl.menu dd {
+	margin-bottom: 1.3em;
+	margin-left: 24px;
+}
+dl.menu dd a {
+	font-size: 1.9em;
+	text-decoration: underline;
+	margin-left: -23px; /* emulating list style inside */
+	padding-left: 25px;
+	background: url(/images/base/arrowMarkerBig.gif) left 60% no-repeat;
+}
+dl.menu dd.currentPage a {
+	color: #D9261C;
+	background-image: url(/images/base/arrowMarkerBigActive.gif);
+	text-decoration: none;
+}
+dl.menu dd.notYetActive a {
+	background-image: none;
+	text-decoration: none;
+	cursor: default;
+}
+
+
+/* breadcrumbs */
+ul.breadCrumbs {
+	list-style: none;
+	height: 1.8em;
+}
+ul.breadCrumbs li {
+	float: left;
+	font-size: 1.3em;
+	white-space: nowrap;
+}
+ul.breadCrumbs li a {
+	vertical-align: top;
+}
+ul.breadCrumbs li .delimeter {
+	font-size: 1.3em;
+	margin: 0 0.5em;
+}
+
+/* layout */
+#theall {
+	position: relative;
+	min-width: 840px;
+}
+#header {
+	position: relative;
+	padding-left: 25px;
+	margin-bottom: 35px;
+}
+#content {
+	position: relative;
+	padding-right: 254px;
+	padding-top: 1px;
+	padding-bottom: 1px;
+}
+#content .column {}
+#content #mainContent {
+	position: relative;
+}
+#content #sideMenu {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 202px;
+	overflow: hidden; /* compensating strange IE7 horizontal scroler */
+	padding-left: 35px;
+}
+#footer {
+	position: relative;
+	margin: 20px;
+	margin-top: 70px; /* space for search form */
+	padding: 20px 2px 35px 2px;
+	clear: both;
+	border-top: 1px solid #363636;
+}
+.mainPage #footer {
+  margin-top: 0px !important;
+}
+
+/* header */
+#header {
+	position: relative;
+	height: 12em;
+	background: url(/images/base/subart/door.gif) 100% 20% no-repeat;
+}
+#header .siteLogo {
+	position: absolute;
+	left: 26px;
+	top: 63px;
+	width: 319px;
+	height: 76px;
+	text-indent: -32786px;
+	overflow: hidden;
+	cursor: pointer;
+	background: url(/images/base/siteLogo.gif) center no-repeat;
+}
+#header #navigation {
+	position: absolute;
+	top: 30px;
+	left: 52px;
+	width: 190px;
+	height: 12px;
+}
+#header #navigation a {
+	float: left;
+	margin-right: 30px;
+}
+#header #navigation a.globalNavHome {
+	margin-right: 50px;
+}
+#header #loginForm form, #loginFloatForm form {
+	display: block;
+}
+#header #loginForm dl.topMenu {
+	display: none;
+}
+#header #loginForm {
+	position: absolute;
+	right: 20px; /* space for #login bg*/
+	height: 14em;
+	width: 28em;
+	top: 14px;
+	padding-left: 90px;
+}
+#loginFloatForm {
+	position: absolute;
+	left: -350px;
+	top: 430px;
+	height: 14em;
+	width: 30em;
+	padding-top:20px;
+	padding-left:44px;
+	background-color:#EEE;
+	z-index:100;
+}
+#loginFloatForm .formItem #closeLoginForm {
+	position: absolute;
+	left:100%;
+	margin-left:-54px;
+	margin-top:-18px;
+	top:0;
+}
+#header #loginForm .formItem a, #loginFloatForm .formItem a {
+	font-size: 1.3em;
+}
+#header #loginForm .formItem, #loginFloatForm .formItem {
+	position: relative;
+	clear: both;
+	margin: 4px 0;
+	padding-left: 5em;
+}
+#header #loginForm .formItem input.text, #loginFloatForm .formItem input.text {
+  font-size: 1.2em;
+  width: 15em;
+}
+#header #loginForm .headItem, #loginFloatForm .headItem {
+	margin-bottom: 12px;
+}
+#header #loginForm .headItem a.help, #loginFloatForm .headItem a.help {
+	vertical-align: top;
+	margin-top: 3px !important;
+}
+#header #loginForm .formItem label, #loginFloatForm .formItem label {
+	position: absolute;
+	display: block;
+	left: 0;
+	top: 0.4em;
+	width: 4.5em;
+	font-size: 1.1em;
+}
+#header #loginForm .formItem input.text, #loginFloatForm .formItem input.text {
+	width: 12em;
+}
+#header #loginForm .formItem #loginLink, #loginFloatForm .formItem #loginLink {
+	margin-left: 0.5em;
+}
+#header #loginForm .formItem #regLink, #loginFloatForm .formItem #regLink {
+}
+#header #loginForm .formItem #lostPassword, #loginFloatForm .formItem #lostPassword {
+	font-size: 1.1em;
+}
+
+/* loggedin header */
+#header.loggedIn {
+	background: url(/images/base/subart/cactus.gif) 100% 20% no-repeat;
+	overflow: hidden;
+
+}
+#header.loggedIn #loginForm {
+	padding-left: 90px;
+	background: url(/images/base/subart/chair.gif) 0 20% no-repeat;
+}
+#header.loggedIn #loginForm form {
+	display: none;
+}
+#header.loggedIn #loginForm dl.topMenu {
+	display: block;
+	margin-top: 2em;
+}
+#header.loggedIn #loginForm dl.topMenu dt,
+#header.loggedIn #loginForm dl.topMenu dd {
+	margin: 0 0 10px 0;
+	font-size: 1.3em;
+	white-space: nowrap;
+}
+#header.loggedIn #loginForm dl.topMenu dt {
+  color: #d91c26;
+  font-weight: bold;
+}
+#header.loggedIn #loginForm dl.topMenu dt b {
+  color: #363636;
+  font-weight: bold;
+}
+#header.loggedIn #loginForm dl.topMenu dd {
+	width: 170px;
+	padding-left: 20px;
+	float: left;
+}
+#header.loggedIn #loginForm dl.topMenu dd#usrLogout {
+  padding-left: 0px;
+  width: 30px;
+}
+#header.loggedIn #loginForm dl.topMenu dd a {
+	position: relative;
+	text-decoration: underline;
+}
+#header.loggedIn #loginForm dl.topMenu dd.newMessages b a {
+	text-decoration: underline;
+	margin-left: 0; /* emulating list style inside */
+	padding-left: 0;
+	background: none;
+}
+
+/* content */
+#mainContent {}
+
+#mainContent dl.menu {
+	float: left;
+	width: 40%;
+	padding-left: 28px;
+	position: relative;
+}
+#mainContent dl.menu dd {
+  white-space: nowrap;
+}
+.breadCrumbs {
+	position: relative;
+	clear: both;
+	padding: 1px;
+	padding-top: 30px; /* using instead of margin for opera un-fucking-collapsing */
+	margin-bottom: 75px;
+	margin-left: 65px;
+}
+#contentArea {
+	position: relative;
+	padding-top: 1.1em;
+	padding-right: 1px; /*IE float fix*/
+}
+.subColumnMenu {
+	position: relative;
+	float: left;
+	width: 35%;
+}
+.subColumnMenu .subMenuDecoration {
+	position: relative;
+	margin-top: 50px;
+	margin-bottom: 170px;
+}
+.subColumnMenu ul.subMenu {
+	margin-left: 51px;
+	margin-right: 20px;
+}
+.subColumnContent {
+	float: left;
+	width: 64.9%;
+}
+.subColumnContent h1 {
+	position: relative; /* just for IE6 */
+	margin-bottom: 1.2em;
+	text-align: center;
+	font-size: 2.5em;
+	font-weight: normal;
+	text-align: center;
+	margin-top: -1.3em;
+	margin-bottom: 1.4em;
+}
+.subColumnContent h2 {
+	font-size: 1.9em;
+	font-weight: normal;
+	margin-top: 38px;
+}
+.subColumnContent h2.results {
+	background: url(/images/base/results.gif) top left no-repeat;
+	padding-left: 57px;
+	height: 53px;
+	line-height: 53px;
+}
+.subColumnContent p,
+.subColumnContent ul.dashMarked li,
+.textContent ul li
+{
+	font-size: 1.4em;
+	line-height: 1.5;
+	margin: 1.3em 0;
+}
+.subColumnContent ul.dashMarked li,
+.textContent ul li
+{
+	margin: .8em 0;
+}
+.subColumnContent ul.dashMarked,
+.textContent ul
+{
+	margin-left: 3.5em;
+}
+
+.attention {
+  background: #ecf1fb;
+  margin: 3.6em 3.6em;
+  padding: 1.5em 3.2em;
+  width: 75%;
+}
+.attention p,
+.attention ul li
+{
+  font-size: 1.3em !important;
+  margin: 0.8em 0 !important;
+  line-height: 1.5 !important;
+}
+.attention h3 {
+  margin: 0.8em 0;
+}
+.attention ul {
+  list-style: square outside;
+  margin-left: 2.7em;
+}
+.attention ul li {
+  padding-left: 0.7em;
+}
+
+
+
+/* submenu */
+ul.subMenu {
+	list-style: none;
+}
+ul.subMenu li {
+	margin-bottom: 0.9em;
+	font-size: 1.4em;
+	white-space: nowrap;
+}
+ul.subMenu li a {}
+ul.subMenu li a.current_node {
+	text-decoration: none;
+	color: #363636;
+	font-weight: bold;
+}
+
+/* inner switch */
+ul.innerSwitch {
+	list-style: none;
+	height: 26px;
+}
+ul.innerSwitch li {
+	float: left;
+	margin-right: 5px;
+	padding: 5px 9px;
+	font-size: 1.2em;
+	color: #cccccc;
+}
+ul.innerSwitch li.innerSwitchCurrent {
+	background-color: #fcf9e5;
+}
+ul.innerSwitch li a {
+	display: block;
+
+}
+ul.innerSwitch li.innerSwitchCurrent a {
+	text-decoration: none;
+	color: #363636;
+}
+
+
+/* alphabetlist */
+dl.abList {
+	margin-top: 5px;
+}
+dl.abList dt {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin-top: 27px;
+	color: #363636;
+	padding: 1px 0; /*uncollapse ie*/
+}
+dl.abList dt.decorated {
+	padding-top: 95px;
+	background-repeat: no-repeat;
+	background-position: 0 top;
+}
+dl.abList dt.decoratedCar {
+	background-image: url(/images/base/subart/landscape.jpg);
+}
+dl.abList dt.decoratedOffroad {
+	background-image: url(/images/base/subart/boot.jpg);
+}
+dl.abList dt em {
+	display: block;
+	float: left;
+	margin-bottom: 11px;
+	font-style: normal;
+	padding: 6px 10px;
+	background-color: #ebf1fa;
+	text-transform: uppercase;
+}
+dl.abList dd {
+	clear: left;
+	font-size: 1.4em;
+	margin: 6px 0;
+	margin-left: 13px;
+}
+dl.abList dd small {
+	font-size: 0.9em;
+}
+
+
+/* content highlight */
+.highLight {
+	clear: both;
+	background-color: #F7F1DE;
+	padding: 1px 0; /* uncollapsing for IE6 */
+}
+.highLight .subColumnMenu {
+	margin-top: 28px;
+	padding-bottom: 85px;
+	background: url(/images/base/art/highLight_pict2.gif) 80% 0 no-repeat;
+}
+.highLight .subColumnContent {
+	float: left !important;
+	width: 62% !important;  /* keep the same as big subcolumn */
+	position: relative;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	color: #494949;
+}
+.highLight .subColumnContent p {
+	margin: 0;
+	margin-left: 3.0em;
+	font-size: 1.3em;
+	line-height: 1.4;
+}
+.highLight .subColumnContent h3 {
+	position: absolute;
+	right: 100%;
+	width: 25%;
+	text-align: right;
+	font-style: italic;
+	font-size: 1.3em;
+}
+.highLight h5 {
+	position: absolute;
+	left: -5.0em;
+	font-style: italic;
+	font-size: 1.3em;
+}
+
+/* sidemenu column */
+#sideMenu {}
+#sideMenu dl.menu {
+  width: 215px;
+	padding: 1px;
+	padding-left: 0;
+	padding-bottom: 20px;
+	margin-bottom: 33px; /* will be collapsed by highLight for sure!!! */
+}
+#sideMenu dl.menu {
+	margin-left: -13px;
+}
+#sideMenu dl.menu dd {
+	margin-left: 24px;
+}
+#sideMenu .sideMenuElement {
+	margin: 20px 0 10px 15px;
+	padding: 20px 15px 19px 25px;
+	font-size: 1.2em;
+}
+#sideMenu .innerEar p {
+  font-size: 1.1em !important;
+  margin: 0.3em 0;
+  padding-left: 20px;
+	line-height: 1.6;
+	color: #494949;
+}
+#sideMenu .innerEar h3 {
+	clear: both;
+	font-style: italic;
+	font-size: 1.2em;
+	margin-bottom: 7px;
+	color: #494949;
+}
+#sideMenu .innerEar .byright {
+	float: right;
+	margin-right: -15px;
+}
+#sideMenu .reindent {
+	margin-left: 0;
+}
+#sideMenu .sideMenuElement.highLight {
+	margin-top: 150px;
+}
+#sideMenu ul.dashMarked li {
+
+}
+.search {
+	font-size: 1.2em !important;
+}
+#sideMenu .search {
+	padding: 0 !important;
+	margin-top: 31px;
+	margin-left: -20px;
+}
+#footer .search {
+	position: absolute;
+	right: -20px;
+	width: 220px;
+	top: -75px;
+}
+.search input.text {
+	width: 150px;
+	padding: 3px 1px;
+	margin-right: 0.5em;
+	vertical-align: middle;
+}
+.search a {
+	font-size: 1.1em;
+}
+#sideMenu .handheld {
+	font-size: 100% !important;
+	margin-bottom: 35px;
+}
+#sideMenu .handheld a {
+	display: block;
+	padding: 24px 0 12px 0;
+	padding-left: 40px;
+	background: url(/images/base/handheld.gif) left center no-repeat;
+}
+/* content for index page */
+ul.mainPageFlow {
+	list-style: none;
+	margin-left: 28px;
+	margin-top: 10px;
+	color: #5D5D5D;
+}
+ul.mainPageFlow li {
+	float: left;
+	width: 28%;
+	margin-left: 7%;
+	margin-bottom: 20px;
+}
+ul.mainPageFlow li.first {
+	margin-left: 0;
+}
+ul.mainPageFlow li.last {
+	margin-left: 5%;
+}
+ul.mainPageFlow li img {
+	display: block;
+	margin: 1em 0;
+	margin-left: 25%;
+}
+ul.mainPageFlow li h3 {
+	margin: 0.5em 0;
+	font-size: 1.3em;
+}
+ul.mainPageFlow li p {
+	font-size: 1.3em;
+}
+.mainPage .highLight {
+	margin: 35px 0 55px 0;
+}
+.mainPage .highLight .subColumnMenu    {
+	background-image: none;
+	padding-bottom: 65px;
+}
+.mainPage dl.news {
+	float: left;
+	width: 49%;
+}
+dl.news {
+}
+dl.news dt {
+	margin-left: 51px;
+	margin-bottom: 16px;
+	font-size: 1.9em;
+	font-weight: normal;
+	text-decoration: underline;
+	color: #494949;
+}
+dl.news dt a {
+	color: #494949;
+}
+dl.news dd {
+	font-size: 1.4em;
+	margin: .8em 0;
+	margin-left: 41px;
+	padding-left: 10px;
+	line-height: 1.3;
+	background: url(/images/base/squareBullet.gif) 0 0.2em no-repeat;
+}
+dl.news dd * {
+	font-size: 100% !important;
+}
+#feedback {
+	position: relative;
+	padding: 50px 0 55px 0;
+	background-position: 0 30px;
+	background-repeat: no-repeat;
+	/* background-image in html*/
+}
+#feedback .reducer {
+	position: relative;
+	margin: 0 46% 0 145px;
+}
+#feedback h3 {
+	font-size: 1.9em;
+	font-weight: normal;
+	color: #494949;
+}
+#feedback h3 a {
+	color: #363636;
+}
+#feedback .feedbackImg {
+	position: absolute;
+	top: -10px;
+	left: -145px;
+}
+#feedback p {
+	margin: 1em 0;
+}
+#feedback blockquote {
+	width: 95%; /* IE6 strange horizontal sizing */
+}
+#feedback blockquote p {
+	font-size: 1.3em;
+	font-style: italic;
+}
+#feedback .reducer strong {
+  font-weight: normal;
+  color: #494949;
+}
+#feedback .reducer p.description {
+  font-size: 1.3em;
+}
+#autos {
+	position: absolute;
+	right: 0;
+	width: 45%;
+	padding-left: 4%;
+	top: 50px;
+}
+#autos dl.autos {
+	width: 49%;
+	margin-right: 0;
+	position: relative;
+	float: left;
+}
+#autos dl.autos dt {
+	position: relative;
+	font-size: 1.9em;
+	font-weight: normal;
+	padding: 1px 0;
+	padding-left: .5em;
+	margin-left: -.5em;
+	color: #494949;
+}
+#autos dl.autos dt a {
+	color: #363636;
+	border-color: #363636;
+}
+#autos dl.autos dd {
+	font-size: 1.4em;
+	margin: 1em 0;
+}
+#autos dl#autosFirst {}
+
+/* sidebar for index page */
+.mainPage #sideMenu .sideMenuElement {
+	padding-left: 0;
+}
+.mainPage #sideMenu .sideMenuElement h3 {
+	font-size: 1.1em;
+}
+#sideMenu .todayDate {
+}
+#sideMenu .todayDate h3 {
+	font-size: 1.2em !important;
+	padding-bottom: 10px;
+}
+#sideMenu .todayDate img {
+	float: left;
+	vertical-align: top;
+	position: relative;
+	margin-left: -11px;
+	margin-right: 10px;
+}
+#sideMenu .todayDate p {
+	position: relative;
+}
+#sideMenu .todayDate p.month {
+	margin-top: 20px;
+	margin-bottom: 5px;
+	font-size: 1.2em;
+}
+#sideMenu .todayDate p.weekDay {
+	font-style: italic;
+	font-size: 1.0em;
+}
+#sideMenu .weather {}
+#sideMenu .weather img {
+  float: left;
+  margin: 5px 5px 0 0;
+}
+#sideMenu .weather .temp {
+	padding: 15px 0 15px 0;
+	padding-left: 70px;
+	font-size: 2.0em;
+	font-weight: normal;
+	background-position: center left;
+	background-repeat: no-repeat;
+}
+#sideMenu .weather .temp1 {
+  padding-left: 100px;
+}
+#sideMenu .weather p {
+	font-size: 1.1em;
+}
+#sideMenu .weather p span {
+	margin-left: 0.5em;
+}
+#sideMenu .weather p span.today {}
+#sideMenu .weather p span.tomorrow {
+	font-size: .9em;
+}
+#sideMenu .weather p span b {
+	font-weight: normal;
+	font-size: 1.05em;
+	margin-left: .5em;
+}
+#sideMenu .weather p span.today b {
+	font-size: 1.02em;
+}
+#sideMenu .currency {
+	padding-right: 23px;
+}
+#sideMenu .currency p {
+	margin: 0.5em 0 1.0em 0;
+	font-size: 1.1em
+}
+#sideMenu .currency table {
+	background-color: #f7f7f7;
+	border-collapse: collapse;
+	border: 6px solid #f7f7f7;
+}
+#sideMenu .currency table td {
+	padding: 4px 6px;
+	font-size: 1.1em;
+}
+#sideMenu .currency table td.currencyRate {
+	font-weight: bold;
+	text-align: right;
+}
+#sideMenu .currency table td.currencyRateChange {
+	text-align: right;
+}
+
+/* catalog pages */
+.abListReducerFourColumns {
+	margin-left: 60px;
+}
+.abListReducerFourColumns dl.abList {
+	float: left;
+	width: 24.9%;
+}
+.abListReducerTwoColumns {
+	width: 63%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+.abListReducerTwoColumns dl.abList {
+	float: left;
+	width: 49.9%;
+}
+.abListReducerThreeColumns {
+	width: 70%;
+	margin: 0 auto;
+}
+.abListReducerThreeColumns dl.abList {
+	float: left;
+	width: 33%;
+}
+
+.carType {
+	position: relative;
+	margin-bottom: 0px;
+}
+.carType strong {
+	position: relative;
+	float: left;
+	font-weight: normal;
+	margin-top: 70px;
+	font-size: 1.9em;
+	width: 140px;
+}
+.carType .imageHolder {
+	width: 240px;
+	height: 150px;
+	overflow: hidden;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+.carTypeCar {
+	margin-top: -10px;
+	padding-left: 30px;
+	height: 125px;
+}
+.carTypeCar strong {
+	float: left;
+	margin-top: auto;
+	font-size: 2.0em;
+	margin-right: 20px;
+	padding-top: 40px;
+	padding-left: 98px;
+	background: url(/images/base/calendar.gif) left 12px no-repeat;
+}
+.carTypeCar img {
+	vertical-align: top;
+}
+.carTypeCar .imageHolder {
+	width: 270px;
+	height: 169px;
+}
+/* series list */
+table.seriesList {
+	position: relative;
+	border-collapse: collapse;
+	margin: 0 auto;
+	margin-top: -35px;
+}
+table.seriesList th,
+table.seriesList td {
+	font-size: 1.6em;
+	height: 69px;
+	padding: 2px 0;
+}
+table.seriesList td.seriesName {
+  padding-right: 40px;
+}
+table.seriesList td.seriesName a {
+  font-size: 1.2em;
+}
+table.seriesList td.seriesImage {
+	width: 110px;
+	vertical-align: middle;
+	text-align: center;
+	background: url(/images/base/imageComingSoon.gif) center center no-repeat;
+}
+th.seriesYear {
+	background: url(/images/base/calendar.gif) 30% bottom no-repeat;
+}
+table.seriesList td.seriesYear {
+	padding-left: 36px;
+}
+table.seriesList td.seriesNote div {
+	text-align: center;
+	margin-top: 40px;
+	position: relative;
+	width: 100%;
+}
+table.seriesList td.seriesNote .footnote {
+	position: absolute;
+	font-size: 0.8em;
+	color: #363636;
+	left: 50%;
+	margin-left: 33px;
+	white-space: nowrap;
+}
+table.seriesList td.seriesNote .footnote .asterix {
+	vertical-align: middle;
+	font-weight: normal;
+	font-size: 1.8em;
+}
+
+/* model list */
+table.seriesModelsList {
+	position: relative;
+	border-collapse: collapse;
+	margin-left: 23px;
+}
+table.seriesModelsList th {
+	font-size: 1.2em;
+	color: #363636;
+	height: 0;
+	padding-top: 14px;
+	white-space: nowrap;
+}
+table.seriesModelsList th.seriesYear {
+	background-position: -10% 0;
+	width: 90px;
+}
+table.seriesModelsList th.modelEngine {
+}
+table.seriesModelsList th.modelTrasmission {
+	text-align: left;
+}
+table.seriesModelsList tr.subHeader th {
+	padding-top: 7px;
+	padding-bottom: 15px;
+}
+table.seriesModelsList tr.subHeader th.modelEngineData {
+	padding-left: 16px;
+}
+table.seriesModelsList td {
+	padding: 12px 0 12px 0;
+	font-size: 1.5em;
+	color: #000000;
+	white-space: nowrap;
+	vertical-align: bottom;
+}
+table.seriesModelsList td.modelName {
+	padding-right: 36px;
+}
+table.seriesModelsList td.modelName a {
+	font-size: 1.2em;
+}
+table.seriesModelsList td.modelTrasmission {
+	padding-right: 15px;
+	width: 100px;
+}
+table.seriesModelsList td.modelTrasmission em {
+	font-size: 0.8em;
+
+}
+table.seriesModelsList th.modelDisplacement,
+table.seriesModelsList th.modelPower,
+table.seriesModelsList th.modelYear,
+table.seriesModelsList td.modelDisplacement,
+table.seriesModelsList td.modelPower,
+table.seriesModelsList td.modelYear {
+	text-align: center;
+}
+table.seriesModelsList td.modelDisplacement,
+table.seriesModelsList td.modelPower {
+	width: 75px;
+	text-align: center;
+}
+table.seriesModelsList td.modelDisplacement {
+	width: 80px;
+}
+table.seriesModelsList td.modelPower {
+	width: 105px;
+}
+table.seriesModelsList td.modelYear {
+	color: #363636;
+	font-size: 1.4em;
+	text-align: left;
+	padding-left: 17px;
+}
+/* chars list */
+.seriesModelsListCarHeader {
+	position: relative;
+	padding-left: 75px;
+	margin-bottom: 20px;
+	font-size: 1.6em;
+}
+.seriesModelsListCarHeader a,
+.numberLink {
+	position: absolute;
+	top: .5em;
+	font-family: "Times New Roman", serif;
+	left: 0;
+	color: #808080;
+	font-size: 0.65em;
+	text-decoration: none;
+	font-weight: normal;
+}
+table.seriesModelsListCar {
+	border-collapse: collapse;
+	margin-left: 100px;
+	margin-bottom: 50px;
+}
+table.seriesModelsListCarLast {
+	margin-bottom: 20px;
+}
+table.seriesModelsListCar td {
+	font-size: 1.2em;
+  vertical-align: bottom;
+  line-height: 180%;
+}
+table.seriesModelsListCar td.carChar {
+	width: 230px;
+}
+table.seriesModelsListCar td.carChar em {
+	color: #494949;
+	font-size: 1.0em;
+}
+table.seriesModelsListCar td.carCharValue {
+	white-space: nowrap;
+	color: #000;
+	font-size: 1.3em;
+}
+table.seriesModelsListCar tr.verticalSpace td {
+	padding-top: 23px;
+}
+table.seriesModelsListCar tr.indent td.carChar em {
+	margin-left: 95px;
+}
+
+
+/* footer */
+.footerColumn {
+	float: left;
+	width: 49%;
+}
+.footerColumn p {
+	margin: 0.2em 0;
+}
+
+/* pages */
+.cite {
+	position: relative;
+	color: #686868;
+	background-color: #f8f8f8;
+	padding: 4px 16px;
+	float: left;
+	font-size: 0.9em;
+	margin-bottom: 12px;
+}
+.cite em {
+	font-style: normal;
+	color: #000000;
+}
+.cite p {
+	margin: .8em 0;
+}
+
+.cite a, .cite a:hover {
+	color: #000000;
+	text-decoration: none;
+}
+.citedText {
+	padding-left: 42px;
+}
+.citedText .cite {
+	position: relative;
+	left: -42px;
+}
+.citedText h2 {
+	margin-left: -29px;
+}
+
+/* car selector forms */
+.subColumnContent .formItem {
+	position: relative;
+	padding: 20px 0;
+	padding-left: 185px;
+}
+.subColumnContent .formItem .wider {
+	width: 130px;
+}
+.subColumnContent .formItem .regular {
+	width: 90px;
+}
+.subColumnContent .formItem .narrow {
+	width: 45px;
+}
+.subColumnContent .formItem .formItem-label {
+	display: block;
+	position: absolute;
+	left: 0;
+	top: 20px;
+	margin-top: .2em;
+	font-size: 1.4em;
+}
+.subColumnContent .formItem-disabled * {
+	color: #999 !important;
+}
+.subColumnContent .formItem .formItem-payload label {
+	font-size: 1.3em;
+	color: #363636;
+}
+.subColumnContent .formItem .formItem-payload select {
+	font-size: 1.3em;
+}
+.subColumnContent .formItem .formItem-payload label.select {
+	position: relative;
+	padding-left: 40px;
+	display: block;
+	float: left;
+	width: 130px;
+	height: 21px;
+	line-height: 21px;
+	font-size: 1.4em;
+	padding: 2px 0;
+	padding-bottom: 4px;
+}
+.subColumnContent .formItem .formItem-payload label.select select {
+	position: absolute;
+	top: 0;
+	left: 25px;
+	font-size: 0.85em !important;
+	height: 20px;
+}
+.subColumnContent .formItem .formItem-payload label.select span {
+	padding: 3px 1px;
+	vertical-align: bottom;
+}
+.subColumnContent .formItem .formItem-payload-block {
+	padding: 5px 0;
+}
+.subColumnContent .formItem .formItem-payload-row {
+	width: 130px;
+	height: 15px;
+	line-height: 15px;
+	float: left;
+	padding-bottom: 4px;
+	white-space: nowrap;
+}
+.subColumnContent .formItem .formItem-payload-row label,
+.subColumnContent .formItem .formItem-payload-inline label  {
+	margin-left: 6px;
+	vertical-align: top;
+}
+.subColumnContent .formItem .formItem-payload-row label {
+}
+.subColumnContent .formItem input.checkbox,
+.subColumnContent .formItem input.checkbox,
+.subColumnContent .formItem input.radio  {
+	vertical-align: middle;
+}
+.subColumnContent .formItem .formItem-payload-inline {
+	display: inline;
+	margin-right: 60px;
+	white-space: nowrap;
+}
+.subColumnContent .formItem-action {
+	padding-left: 160px;
+	margin-top: 65px;
+}
+.subColumnContent a.submit {
+	font-size: 1.9em;
+}
+.subColumnContent .formItem-error {
+	color: red;
+	display: none;
+}
+
+/*weather*/
+.weatherContent {}
+.weatherContent h1 {
+	margin-bottom: 1.85em;
+}
+.weatherContent .subColumnContent {
+	position: relative;
+}
+
+.thermometer {
+	position: relative;
+	margin-top: 70px;
+	margin-bottom: 140px;
+	width: 120px;
+	height: 250px;
+	background: url(/images/base/thermometerBG.png) no-repeat;
+}
+.subColumnMenu .thermometer {
+	margin-left: 15px;
+}
+.thermometer * {
+	font-size: 0;
+}
+.thermometer .temperatureHolder {
+	position: absolute;
+	width: 6px;
+	bottom: 32px;
+	left: 53px;
+	height: 183px;
+}
+.thermometer .temperature {
+	position: absolute;
+	bottom: -1px;
+	border: 1px solid #fed4d6;
+	border-bottom: none;
+	background: url(/images/base/thermometerColumn.gif) center repeat-y;
+	width: 6px;
+}
+
+.subColumnMenu .todayWeather {
+	position: absolute;
+	top: 43px;
+	left: 54%;
+	width: 145px;
+}
+.subColumnMenu .todayWeather h2 {
+	font-size: 1.8em;
+	margin-bottom: 10px;
+}
+.subColumnMenu .todayWeather .weatherItem {
+	margin-left: 16px;
+}
+/*weather item*/
+.weatherItem {
+	padding-top: 58px;
+	padding-left: 5px;
+}
+.weatherItem .temperature {
+	font-size: 1.9em;
+	font-weight: normal;
+}
+.weatherItem .weatherText {
+	font-style: italic;
+	line-height: 1.7em;
+	font-size: 1.2em !important;
+	margin: 0 !important;
+	margin-top: 5px !important;
+}
+
+table.weatherTable {
+	border-collapse: collapse;
+	margin-top: 35px;
+	margin-left: 44px;
+}
+table.weatherTable th {
+	background-color: #ebf2fa;
+	text-align: left;
+	padding: 6px 15px 6px;
+	font-size: 1.6em;
+	white-space: nowrap;
+}
+table.weatherTable th.todayCol {
+	background-color: #f6f7f9;
+}
+table.weatherTable th.weekendCol {
+	color: #b41900;
+}
+table.weatherTable td {
+	width: 25%;
+	padding-top: 20px;
+	vertical-align: top;
+	color: #494949;
+}
+table.weatherTable td .weatherItem {
+	padding-left: 33px;
+}
+
+.weatherTableDetails td {
+	padding-bottom: 6px;
+}
+.weatherTableDetails td .weatherItem {
+	padding-top: 0;
+	background: none;
+}
+.weatherTableDetails td .weatherItem .weatherText {
+	font-size: 1.1em !important;
+}
+.weatherTableDetails td.wasted-time {
+	background: url(/images/base/wastedTime.gif) center 30px no-repeat;
+}
+.weatherTableDetails td .dayPart {
+	position: absolute;
+	left: 15px;
+	font-size: 1.3em;
+	font-weight: bold;
+	color: #000;
+}
+
+/* plus minus */
+h2.plusMinus {
+	font-size: 1.6em;
+}
+h3.plusMinus {
+	padding-top: 12px;
+	margin-bottom: 23px;
+	font-size: 2.0em;
+	font-weight: normal;
+	color: #494949;
+}
+.plusminusQuote {
+	margin-left: 3.5em;
+}
+.plusminusQuote cite {
+	font-style: normal;
+	font-size: 1.8em;
+}
+.plusminusQuote p {
+	margin-left: 30px;
+	font-size: 1.3em;
+	line-height: 150%;
+	font-style: italic;
+}
+.plusminusQuotePager {
+  margin-left: 2.5em;
+	font-size: 1.4em;
+	margin-top: 40px;
+}
+.plusminusQuotePager strong {
+	margin-right: 1.2em;
+}
+.plusminusQuotePager  .plusminusQuotePagerLink {
+	margin-left: .0;
+	text-decoration: none;
+	color: #999;
+}
+.plusminusQuotePager  .plusminusQuotePagerLink a {
+	text-decoration: none;
+	color: #999;
+}
+.plusminusQuotePager  .plusminusQuotePagerLink a.plusminusQuotePagerLinkActive {
+	text-decoration: none;
+	color: #195CAB;
+}
+.plusminusQuotePager em {
+	font-style: normal;
+	margin: 0 .6em;
+}
+.plusminusQuotePager a.plusminusQuotePagerLinkActive em {
+	text-decoration: underline;
+}
+
+/* db pages */
+.dbHeader {
+	font-size: 1.8em;
+	font-weight: normal;
+	color: #494949;
+	margin-bottom: 11px;
+}
+dl.dbList {
+	margin-bottom: 30px;
+}
+dl.dbList dt {
+	margin-left: 19px;
+	margin-bottom: -14px;
+	padding: 15px 0;
+	padding-left: 56px;
+	background: url(/images/base/db_icon.gif) center left no-repeat;
+	font-size: 1.5em;
+}
+dl.dbList dd {
+	margin: 11px 0;
+	margin-left: 130px;
+	font-size: 1.3em;
+	font-style: italic;
+	line-height: 150%;
+	color: #494949;
+}
+dl.dbList dd ol {
+	margin-left: 1.5em;
+}
+dl.dbList dd ol li {
+	margin: 11px 0;
+}
+
+.modelsList {
+	font-size: 1.4em;
+	margin-bottom: 25px;
+}
+.modelsList dt {
+	color: #686868;
+}
+.modelsList dd {
+	margin: 6px 0 12px 40px;
+	padding: 16px 0 4px 45px;
+	background: url(/images/base/notepadIcon.gif) left center no-repeat;
+}
+
+/* ref pages */
+dl.refList {
+	margin-bottom: 15px;
+}
+dl.refList dt {
+	font-size: 1.5em;
+	color: #686868;
+	margin-bottom: 6px;
+}
+dl.refList dd {
+	margin: 3px 0;
+	margin-left: 38px;
+	padding: 15px 0;
+	padding-left: 48px;
+	background: url(/images/base/ref_icon.gif) center left no-repeat;
+	font-size: 1.5em;
+}
+
+/* noicon pages */
+dl.simpleList {
+	margin-bottom: 15px;
+}
+dl.simpleList dt {
+	font-size: 1.5em;
+	color: #686868;
+	margin-bottom: 6px;
+}
+dl.simpleList dd {
+	margin: 3px 0;
+	margin-left: 38px;
+	padding: 15px 0;
+	padding-left: 48px;
+	font-size: 1.5em;
+}
+
+/* car selector */
+#contentArea.carSelectionPage {
+
+}
+#contentArea.carSelectionPage ul.innerSwitch {
+	margin-top: 50px;
+}
+#contentArea.carSelectionPage .formItem {
+	margin-left: 47px;
+}
+
+
+/* one-to-one dl list */
+dl.list-onetoone {
+	font-style: italic;
+}
+dl.list-onetoone dt {
+	float: left;
+	width: 115px;
+	padding-right: 10px;
+	color: #999;
+}
+dl.list-onetoone dt ,
+dl.list-onetoone dd {
+	font-size: 1.3em;
+	padding: 6px 0;
+}
+
+/* Car selection results */
+.carSelectionResults dl.list-onetoone {
+	margin-left: 20px;
+}
+.carSelectionResults .indent {
+	margin-left: 25px;
+}
+carSelectionResults table.seriesModelsList {
+	margin-left: 0;
+	margin-bottom: 20px;
+}
+.carSelectionResults table.seriesModelsList th.modelName,
+.carSelectionResults table.seriesModelsList tr.modelType th,
+.carSelectionResults table.seriesModelsList tr.modelType td {
+	text-align: left;
+}
+.carSelectionResults table.seriesModelsList th {
+	font-weight: normal;
+	font-style: italic;
+}
+.carSelectionResults table.seriesModelsList th.modelName h3 {
+	font-size: 1.6em;
+	font-weight: normal;
+	font-style: normal;
+	margin-top: 20px;
+}
+.carSelectionResults table.seriesModelsList td.modelName {
+	padding-left: 52px;
+	width: 110px;
+}
+.carSelectionResults table.seriesModelsList td.modelName span {
+	display: block;
+	position: relative;
+}
+.carSelectionResults table.seriesModelsList td.modelName span .numberLink {
+	font-size: 0.7em;
+	left: -52px;
+}
+.carSelectionResults table.seriesModelsList td.modelName a {
+	font-size: 1.1em;
+	font-weight: normal;
+}
+.carSelectionResults table.seriesModelsList tr.modelType th {
+	padding-top: 5px;
+}
+.carSelectionResults table.seriesModelsList tr.modelType h4 {
+	margin-left: 30px;
+	padding-bottom: 10px;
+	font-size: 1.1em;
+	color: #494949;
+	font-style: normal;
+}
+.carSelectionResults table.seriesModelsList tr.modelType td {
+	padding: 35px 0 0;
+}
+.carSelectionResults table.seriesModelsList tr.modelType td h4 {
+	font-size: 0.9em;
+}
+
+/* pager */
+.pager {}
+.pager p {
+	margin: 0 !important;
+	padding-top: 17px !important;
+}
+.pager strong {
+	font-size: 1.5em;
+	color: #494949;
+}
+.pager strong a {
+	position: relative;
+	font-weight: normal;
+	text-transform: lowercase;
+	text-decoration: none;
+	margin-left: .2em;
+}
+.pager .disabled {
+	color: #999;
+}
+.pager strong a .arrow {
+	position: relative;
+	top: .1em;
+	font-size: 1.2em;
+	text-decoration: none;
+	margin: 0 .3em;
+}
+.pager strong a .caption {
+	text-decoration: underline;
+}
+.pager .disabled .caption {
+	text-decoration: none;
+}
+.pager .pagerPages strong {
+	font-size: 1.2em;
+	color: #000;
+}
+.pager .pagerGoInput {
+	width: 35px;
+	margin-left: 20px;
+	margin-right: 3px;
+	font-size: 0.9em;
+}
+
+.carSelectionResults .pager {
+	margin-top: 35px;
+}
+#footer, #content {
+}
+
+/* dealers pages */
+.dealers_1 {
+	padding-top: 16px;
+	margin: 0 auto;
+	font-size: 1.3em;
+	width: 460px;
+}
+.dealers_1 fieldset {
+	padding: 14px 20px;
+	float: left;
+}
+.dealers_1 #mark {
+	width: 110px;
+	margin: 0 18px 0 8px;
+}
+.dealers_1 #city {
+	width: 140px;
+	margin: 0 10px 0 8px;
+}
+
+.dealers_1 .formItem {
+	padding: 5px 0;
+	margin-left: 50px;
+}
+
+.dealers_1 .formItem-action {
+	margin-top: 10px;
+	padding-left: 160px;
+}
+
+.dealers_1 .formItem-error {
+	margin-top: 10px;
+	padding-left: 130px;
+}
+
+
+/* dealers list label */
+.dillersList {
+	border-collapse: collapse;
+}
+.dillersList th {
+	padding-bottom: 30px;
+	font-size: 1.3em;
+	color: #999;
+	font-weight: normal;
+	font-style: italic;
+}
+.dillersList th.addressColumn {
+	text-align: left;
+}
+.dillersList td {
+	font-size: 1.2em;
+	vertical-align: top;
+	padding-bottom: 45px;
+}
+.dillersList .nameColumn {
+	width: 250px;
+}
+.dillersList td.nameColumn {
+	font-size: 1.4em;
+	padding-right: 10px;
+}
+.dillersList td.addressColumn {
+	padding-right: 20px;
+}
+.dillersList .ratingColumn {
+	text-align: center;
+	width: 75px;
+	padding-right: 15px;
+}
+.dillersList .testimonialsColumn {
+	width: 60px;
+}
+.dillersList td.testimonialsColumn {
+	font-size: 1.6em;
+	text-align: center;
+}
+.address {
+	font-style: italic;
+	font-size: 1.1em;
+}
+.phone {
+	font-size: 1.2em;
+	color: #000;
+	white-space: nowrap;
+}
+.dillersList td.addressColumn .nowrap {
+	white-space: normal;
+}
+.dillersList td.addressColumn .address {
+	display: block;
+	margin-bottom: 25px;
+	line-height: 150%;
+}
+.dillersList td.addressColumn .phone {
+	display: block;
+}
+
+/* rating */
+ul.ratingStars {
+	position: relative;
+	list-style: none;
+	display: block;
+	width: 75px;
+	height: 19px;
+	background: url(/images/base/stars.gif) left -19px repeat-x;
+	overflow: hidden;
+}
+ul.ratingService {
+  background: url(/images/base/service.gif) left -19px repeat-x !important;
+}
+ul.ratingStars li {
+	text-indent: -32768px;
+	text-align: left !important;
+	width: 15px;
+	height: 19px;
+	float: left;
+	z-index: 0;
+}
+ul.ratingStars li.currentRating {
+	background: url(/images/base/stars.gif) left 0 repeat-x;
+}
+ul.ratingService li.currentRating {
+	background: url(/images/base/service.gif) left 0 repeat-x !important;
+}
+ul.ratingStars li span {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 15px;
+	height: 19px;
+	text-decoration: none;
+	outline: none;
+	z-index: 40;
+}
+ul.ratingStars li span.ratingStars-1 {
+	left: 0;
+}
+ul.ratingStars li span.ratingStars-2 {
+	left: 15px;
+}
+ul.ratingStars li span.ratingStars-3 {
+	left: 30px;
+}
+ul.ratingStars li span.ratingStars-4 {
+	left: 45px;
+}
+ul.ratingStars li span.ratingStars-5 {
+	left: 60px;
+}
+
+ul.ratingService li a:hover {
+	background: url(/images/base/service.gif) left -38px repeat-x !important;
+}
+ul.ratingStars li a:hover {
+	left: 0;
+	background: url(/images/base/stars.gif) left -38px repeat-x;
+	z-index: 1;
+}
+ul.ratingStars li a:hover.ratingStars-1 {
+	width: 15px;
+}
+ul.ratingStars li a:hover.ratingStars-2 {
+	width: 30px;
+}
+ul.ratingStars li a:hover.ratingStars-3 {
+	width: 45px;
+}
+ul.ratingStars li a:hover.ratingStars-4 {
+	width: 60px;
+}
+ul.ratingStars li a:hover.ratingStars-5 {
+	width: 75px;
+}
+
+/*dealer list details*/
+.dealerDetails {
+	width: 440px;
+	margin: 0 auto;
+	margin-bottom: 35px;
+}
+
+.dealerDetails dt {
+	margin-bottom: 10px;
+	font-size: 1.2em;
+	font-weight: bold;
+	color: #494949;
+}
+.dealerDetails dd {
+	margin-left: 50px;
+	
+	font-size: 1.4em;
+}
+.dealerDetails dd.dealerDetails-hasOutlet {
+	padding: 1px 0;
+	padding-right: 170px;
+	position: relative;
+	width: 220px;
+}
+.dealerDetails .dealerDetails-outlet {
+	padding: 1px 0;
+	width: 150px;
+	margin: 0;
+	position: absolute;
+	right: 0;
+	top: 8px;
+	text-align: right;
+}
+.dealerDetails dd p {
+	margin: 6px 0;
+	font-size: .9em;
+}
+.dealerDetails .dealerDetails-outlet a {
+	font-size: 1.2em;
+}
+.dealerDetails .dealerDetails-outlet a.gps {
+	position: relative;
+	font-size: 1.0em;
+}
+.dealerDetails dd p.address {
+	font-style: normal;
+	font-size: 1.1em;
+}
+.dealerDetails dd p em {}
+.dealerDetails dd ul.ratingStars {
+	float: right;
+}
+.dealerDetails dd ul.dashMarked {
+	margin: 0;
+}
+.dealerDetails dd ul.dashMarked li {
+	font-size: 1.0em;
+}
+
+/* dealers references list */
+.dillersRefList {
+	margin: 20px;
+	border-collapse: collapse;
+	width: 565px;
+	margin-left: 30px;
+	color: #999;
+	font-weight: normal;
+	font-style: italic;
+}
+.dillersRefList th {
+	font-size: 1.2em;
+	padding-bottom: 8px;
+}
+.dillersRefList .ratingUpColumn {
+	width: 55px;
+	padding-right: 18px;
+	text-align: center;
+}
+.dillersRefList .ratingDownColumn {
+	width: 55px;
+	padding-left: 18px;
+	text-align: center;
+}
+.dillersRefList .ratingColumn {
+	padding-left: 55px;
+	width: 75px;
+}
+.dillersRefList th.ratingUpColumn {
+	padding-top: 60px;
+	background: url(/images/base/voteUp.gif) top left no-repeat;
+}
+.dillersRefList th.ratingDownColumn {
+	padding-top: 60px;
+	background: url(/images/base/voteDown.gif) top right no-repeat;
+}
+.dillersRefList th.ratingColumn {
+	vertical-align: bottom;
+}
+.dillersRefList td {
+	padding: 20px 0;
+}
+.dillersRefList td.nameColumn {
+	font-size: 1.6em;
+}
+.dillersRefList td.ratingUpColumn {
+	color: #494949;
+	font-size: 1.2em;
+}
+.dillersRefList td.ratingDownColumn {
+	font-size: 1.3em;
+}
+.dillersRefList td.ratingColumn {}
+
+/* dealers refs */
+.dealerReferences {
+	font-size: 1.4em;
+	margin-bottom: 15px;
+	margin-left: 5px;
+}
+.dealerReferences dt {
+	margin-bottom: 5px;
+}
+.dealerReferences dt em {
+	font-style: normal;
+	color: #686868;
+}
+.dealerReferences dt em span {}
+.dealerReferences dd {
+	background: url(/images/base/handcart.gif) no-repeat center left;
+	padding: 15px 0;
+	padding-left: 48px;
+	margin: 2px 0;
+	margin-left: 38px;
+}
+
+/* dealers refs */
+.serviceReferences {
+	font-size: 1.4em;
+	margin-bottom: 15px;
+	margin-left: 5px;
+}
+.serviceReferences dt {
+	margin-bottom: 5px;
+}
+.serviceReferences dt em {
+	font-style: normal;
+	color: #686868;
+}
+.serviceReferences dt em span {}
+.serviceReferences dd {
+	background: url(/images/base/servkey.gif) no-repeat center left;
+	padding: 15px 0;
+	padding-left: 48px;
+	margin: 2px 0;
+	margin-left: 38px;
+}
+
+/* cars_selector for atricles */
+
+.cars_selector {
+	padding-top: 16px;
+	margin: 0 auto;
+	font-size: 1.3em;
+	width: 470px;
+}
+.cars_selector fieldset {
+	padding: 14px 20px;
+	float: left;
+	background: #F8F8F8;
+}
+.cars_selector #mark {
+	width: 110px;
+	margin: 0 18px 0 8px;
+}
+.cars_selector #model {
+	width: 140px;
+	margin: 0 10px 0 8px;
+}
+.cars_selector .nolink {
+  text-decoration: none;
+  color: #363636;
+  cursor: default;
+}
+
+/* marks hided block */
+.sefind {
+  font-size: 1em;
+  padding-top: 20px;
+  display: none;
+}
+
+.sefind dd {
+  float: left;
+}
+  
+.sefind dd a {
+  padding-left: 5px;
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+/* to cost */
+
+.interval {
+	color: #494949;
+	margin: 1.3em auto;
+  font-size: 1.4em;
+  line-height: 130%;
+  width: 400px;
+}
+.interval strong {
+  color: #363636;
+	font-size: 1.1em;
+}
+.price_services {
+	width: 314px;
+	padding-top: 18px;
+	font-size: 1.3em;
+	margin: 0 auto;
+}
+.price_services dt {
+	clear: left;
+	float: left;
+	width: 110px;
+	text-align: center;
+}
+.price_services dd {
+	float: left;
+	width: 202px;
+	text-align: center;
+}
+.price_services dd.pr {
+	width: 118px;
+	text-align: right;
+	font-size: 1.14em;
+	padding: 11px 84px 11px 0;
+	color: #000;
+}
+.run_head {
+	padding: 59px 0 15px 0;
+	font-style: italic;
+	background: url(/images/base/count.png) center 0 no-repeat;
+}
+.pr_head {
+	padding: 43px 0 15px 0;
+	font-style: italic;
+	color: #000;
+	background: url(/images/base/price.png) center 0 no-repeat;
+}
+.run {
+	font-style: italic;
+	padding: 11px 0;
+	color: #494949;
+}
+.total {
+	width: 314px;
+	margin: 0 auto;
+ 	font-size: 1.5em;
+	text-align: right;
+	padding-top: 22px;
+	padding-right: 110px;
+}
+
+/* News */
+
+#auto_community_news .ac_header {
+  font-style: italic;
+  font-size: 1.2em;
+  color: #7B7B7B;
+}
+#auto_community_news p {
+  margin: 6px 0 40px 16px;
+}
+
+.is_03{
+	display: block;
+	margin-left: 26px;
+	margin-bottom: 42px;
+}
+.ishided {
+  display: none;
+}
+.news .date {
+	font-weight: normal;
+	margin: 0px 0px 24px 50px;
+}
+.news .name {
+	font-size: 1.8em;
+	font-weight: normal;
+	padding: 0px;
+	margin: 0 0 0 82px;
+}
+.news .time {
+	padding: 0px 0px 0px 105px;
+	font-size: 1.2em;
+	color: #7b7b7b;
+	margin-bottom: 15px;
+}
+.news .content p{
+	margin-left: 105px;
+	margin-bottom: 40px;
+}
+
+.newsdetails .date {
+	padding: 0px 0px 0px 46px;
+	position: relative;
+	top: -35px;
+	margin: 0px;
+	font-size: 1.2em;
+	color: #7b7b7b;
+}
+.newsdetails .name {
+	padding: 0px !important;
+	margin: 0px !important;
+	text-align: left !important;
+	position: relative;
+	top: -20px;
+}
+.newsdetails .content {
+	position: relative;
+	top: -20px;
+	padding: 0px 0px 0px 46px;
+}
+
+.newsdetails .copyr {
+	position: relative;
+	top: -20px;
+	padding: 0px 0px 0px 46px;
+	color: #cccccc;
+	font-size: 0.8em;
+}
+
+.newsdetails .copyr A {
+	color: #cccccc;
+	text-decoration: none;
+}
+
+/* news archive */
+.calendarMonth {
+  display: none;
+}
+.arhiv {
+	width: 271px;
+	margin: 0 auto;
+}
+#arhivForm {
+	
+}
+#arhivForm table {
+	background: #f6f6f6;
+	height: 47px;
+	font-size: 1.3em;
+	margin: 0px 0px 10px;
+}
+.arhiv .yearLabel {
+	padding-left: 20px;
+	width: 63px;
+}
+.arhiv .monthLabel {
+	width: 54px;
+}
+#arhivForm select {
+	width: 118px;
+}
+#yearBlock {
+	float: left;
+	width: 46px;
+	text-align: right;
+	font-size: 1.3em;
+	line-height: 35px;
+}
+#monthBlock {
+	margin-top: 24px;
+	float: left;
+	margin-left: 45px;
+}
+.calendarMonth {
+	background: #FFFFFF !important;
+}
+.calendarMonth td {
+	text-align: right;
+	vertical-align: top;
+	height: 31px;
+	width: 26px;
+}
+.arhiv .weekday {
+	color: #FF0000;
+}
+.arhiv .cYearSelected {
+  font-weight: bold;
+  color: #000000;
+  text-decoration: none;
+}
+
+/* cars wheels */
+.wheelsbundles {
+	background: url(/images/base/wheel_03.gif) no-repeat;
+	margin-left: 66px;
+	padding-left: 94px;
+	font-size: 1.4em;
+	line-height: 1.7em;
+}
+.komplekt_01 {
+  padding-top: 15px;
+}
+.komplekt_01 td {
+	padding: 0px 0px 7px 40px;
+	font-size: 1.1em;
+}
+.komplekt_01 th {
+	font-size: 0.9em;
+	font-weight: normal;
+	text-align: left;
+	padding: 0px 0px 0px 20px;
+}
+/*
+.komplekt_01 a {
+	font-size: 1.2em;
+}
+*/
+.bswcorrector {
+	display: block;
+	margin-left: 26px;
+	margin-bottom: 24px;
+}
+.tc_01{
+	margin: 0px;
+}
+.simplelistHeader {
+	margin: 0;
+	color: #494949;
+	font-size: 1.6em;
+}
+.simplelistHeaderDisk {
+	height: 34px;
+	background: url(/images/base/wheel_01.gif) no-repeat;
+	padding: 22px 0px 0px 86px;
+}
+.simplelistHeaderWheel {
+	height: 37px;
+	background: url(../images/base/wheel_02.gif) no-repeat;
+	padding: 29px 0px 0px 86px;
+}
+.nauka_01 {
+	font-size: 1.3em;
+	line-height: 1.7em;
+	margin: 0px 0px 10px 128px;
+}
+dl.nauka_01 {
+	font-size: 1.3em;
+	line-height: 1.7em;
+	margin: 0px 0px 10px 128px;
+}
+.nauka_01 dt {
+	font-style: italic;
+	float: left;
+	clear: both;
+	width: 203px;
+	color: #494949;
+}
+.nauka_01 dd {
+	font-size: 1.1em;
+	color: #000000;
+}
+.nauka_01 dd em {
+	font-size: 0.9em;
+	color: #494949;
+}
+.n1 {
+	margin-top: -3px !important;
+}
+.n2 {
+	width: auto !important;
+	font-style: normal !important;
+	float: none !important;
+	white-space: nowrap;
+}
+.n3 {
+	margin-bottom: 16px;
+	display: block;
+}
+
+/* news image gallery */
+.imageGalleryCollection {
+  display: none;
+}
+
+.imageGalleryPlaceholder {
+  margin:0 0 30px 0;
+  position:relative;
+  top:-20px;
+  font-size:1.3em;
+}
+.imageGalleryPlaceholder .main_photo {
+  width:271px;
+  margin:0 auto;
+}
+.imageGalleryPlaceholder li {
+  list-style:none;
+}
+.imageGalleryPlaceholder .prev {
+  position:absolute;
+  left:0;
+  top:130px;
+}
+.imageGalleryPlaceholder .prev span {
+  padding-left:15px;
+  background:url(/images/base/gallery/prev.gif) no-repeat 0 .4em;
+}
+.imageGalleryPlaceholder .next span {
+  padding-right:15px;
+  background:url(/images/base/gallery/next.gif) no-repeat right .4em;
+}
+.imageGalleryPlaceholder .prev img,
+.imageGalleryPlaceholder .next img {
+  display:block;
+  margin-bottom:13px;
+  opacity:0.6;
+  filter:expression( runtimeStyle.filter = 'progid:DXImageTransform.Microsoft.Alpha(opacity='+currentStyle.opacity*100+')' );
+}
+.imageGalleryPlaceholder .next {
+  position:absolute;
+  right:0;
+  top:130px;
+  text-align: right;
+}
+.imageGalleryPlaceholder {
+  padding-top:52px;
+  overflow:hidden;
+  zoom:1;
+  position:relative;
+}
+.imageGalleryPlaceholder a.disabledSwitch {
+  color: #999;
+  text-decoration: none;
+}

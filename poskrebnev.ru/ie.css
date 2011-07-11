@@ -1,0 +1,95 @@
+#white {
+	filter:alpha(opacity=80);
+}
+#hand{
+	filter:expression(fixPNG(this));
+}
+#hand1{
+	filter:expression(fixPNG(this));
+}
+#hand2{
+	filter:expression(fixPNG(this));
+}
+h1#logo {
+	filter:expression(fixPNG(this));
+}
+#text div.content-top{
+	height:52px;
+	margin:10px 10px 0px 10px;
+	top:-17px;
+}
+#text div.content-top div.left-corner{
+	left:-13px;
+	filter:expression(fixPNG(this));
+}
+#text div.content-top div.right-corner{
+	filter:expression(fixPNG(this));
+}
+#text div.content-top div.line{
+	filter:expression(fixPNG(this));
+}
+#text div.content-bottom div.watch{
+	filter:expression(fixPNG(this));
+}
+#text div.content-bottom div.left-corner{
+	bottom:-1px;
+	filter:expression(fixPNG(this));
+}
+#text div.content-bottom div.right-corner{
+	right:-11px;
+	bottom:-1px;
+	filter:expression(fixPNG(this));
+}
+#text div.content-bottom div.line{
+	bottom:-17px;
+	right:-1px;
+	filter:expression(fixPNG(this));
+}
+#text p.rospis img{
+	margin-left:27px;
+	right:auto;
+	top:0px;
+	filter:expression(fixPNG(this));
+}
+#foto {
+	position:relative;
+}
+#foto div.shadow img.foto{
+	position:relative;
+}
+#form-block {
+	top:40px;
+}
+#form-block div.content-top{
+	margin:-10px 10px 0px 10px;
+}
+#form-block div.content-top div.left-corner{
+	left:-10px;
+	filter:expression(fixPNG(this));
+}
+#form-block div.content-top div.right-corner{
+	filter:expression(fixPNG(this));
+}
+#form-block div.content-top div.line{
+	filter:expression(fixPNG(this));
+}
+#form-block div.content-bottom div.watch{
+	filter:expression(fixPNG(this));
+}
+#form-block div.content-bottom div.left-corner{
+	bottom:-1px;
+	filter:expression(fixPNG(this));
+}
+#form-block div.content-bottom div.right-corner{
+	right:-11px;
+	bottom:-1px;
+	filter:expression(fixPNG(this));
+}
+#form-block div.content-bottom div.line{
+	bottom:-17px;
+	right:-1px;
+	filter:expression(fixPNG(this));
+}
+#text div.content div.cal ul{
+	padding-bottom:0px;
+}

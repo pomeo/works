@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Untitled Document</title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<link type="text/css" rel="stylesheet" media="screen" href="css/common.css" />
+		<link type="text/css" rel="stylesheet" media="screen" href="styles.css" />
+	</head>
+	<body>
+		<div id="popup-block" class="remind">
+			<div class="inpopup-block">
+				<a class="close" href="#">Закрыть</a>
+				<h3>Напоминание пароля</h3>
+				<form action="#" method="post">
+					<p><em>E-mail, указанный при регистрации:</em><input name="email" class="email" type="text" /></p>
+					<div class="captcha">
+						<p><em>Введите целиком слово с пропущенной буквой.</em></p>
+						<a class="captcha" href="#"><img src="images/captcha.jpg" alt="" /></a><br />
+						<input name="captcha" class="captcha" type="text" />
+						<p><em>Не можете угадать слово? Щелкните по нему мышкой, чтобы отобразить другое.</em></p>
+					</div>
+					<input type="submit" class="remind" value="Напомнить" />
+				</form>
+			</div>
+		</div>
+		<br /><br />
+		<div id="popup-block" class="emailsend">
+			<div class="inpopup-block">
+				<a class="close" href="#">Закрыть</a>
+				<h3>Напоминание пароля</h3>
+				<p><em>Инструкции по Вашим дальнейшим действиям отправлены на указанный e-mail.</em></p>
+			</div>
+		</div>
+		<br /><br />
+		<div id="popup-block" class="auth">
+			<div class="inpopup-block">
+				<a class="close" href="#">Закрыть</a>
+				<h3>Авторизация</h3>
+				<form action="#" method="post">
+					<label><em>Логин (e-mail):</em><input name="login" type="text" /></label>
+					<label><em>Пароль:</em><input name="pass" type="text" /></label>
+					<label class="submit"><input type="submit" class="submit" value="Войти" /></label>
+				</form>
+				<p class="auth-other-links">
+					<a href="#">Зарегистрироваться</a><br />
+					<a href="#">Забыли пароль?</a>
+				</p>
+			</div>
+		</div>
+	</body>
+</html>

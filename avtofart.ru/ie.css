@@ -1,0 +1,49 @@
+#main-block {
+	width:expression((document.documentElement.clientWidth || document.body.clientWidth) < 988? "988px": "auto");
+}
+#top {
+	width:99.8%;
+}
+#top div.right-side{
+	width:227px;
+}
+#top div.wrapper{
+	margin-right:227px;
+}
+#top div.right-side div.right-side-shadow{
+	left:-3px;
+}
+#top div.wrapper div.left-side div.left-side-shadow{
+	right:-4px;
+}
+#content {
+	width:99.8%;
+}
+#content div.right-side{
+	width:231px;
+}
+#menu {
+	margin-right:229px;
+}
+#content div.wrapper{
+	margin-right:229px;
+}
+#scroll {
+	width:99%;
+	overflow:scroll;
+}
+#scroll div.car{
+	width:92%;
+}
+#left-side div.car{
+	width:97%;
+}
+#footer {
+	width:99.8%;
+}
+#footer div.wrapper{
+	margin-right:227px;
+}
+#footer div.right-side{
+	width:227px;
+}

@@ -1,0 +1,430 @@
+html,body {
+	padding:0px;
+	margin:0px;
+	background-image:url(images/background.jpg);
+	font-family:Tahoma, Verdana, Helvetica;
+	font-size:11px;
+	color:#3A3935;
+}
+img {
+	border:none;
+}
+div#body {
+	background:url(images/back_left_side.gif) repeat-y left;
+}
+div#body_inner {
+	background:url(images/back_right_side.gif) repeat-y right;
+}
+a {
+	color:#3A3935;
+}
+a:hover {
+	text-decoration:none;
+}
+/***********************top***********************/
+#wrapper {
+	width:990px;
+	height:232px;
+	position:relative;
+}
+#top {
+	background:url(images/top/back_top.png) no-repeat;
+	width:990px;
+	height:232px;
+	position:relative;
+	z-index:500;
+	filter:expression(fixPNG(this));
+}
+#wrapper div.top_desc{
+	width:520px;
+	height:26px;
+	color:#C21F10;
+	position:absolute;
+	right:36px;
+	top:20px;
+	z-index:1000;
+}
+#wrapper div.top_desc span{
+	padding-left:25px;
+	padding-right:25px;
+}
+#wrapper ul.menu{
+	list-style:none;
+	padding:0px;
+	margin:0px;
+	position:absolute;
+	bottom:52px;
+	right:45px;
+	z-index:1000;
+}
+#wrapper ul.menu li{
+	display:inline;
+	padding-left:40px;
+	padding-right:40px;
+}
+#wrapper ul.menu li a{
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+}
+#wrapper ul.menu li a:hover{
+	text-decoration:underline;
+}
+#wrapper div.fotos{
+	position:absolute;
+	right:20px;
+	top:20px;
+	z-index:100;
+}
+/***********************end_top***********************/
+/***********************content***********************/
+#content {
+	background-image:url(images/content/back.gif);
+	width:941px;
+	padding-left:28px;
+	padding-right:21px;
+	padding-bottom:3px;
+	position:relative;
+	z-index:1000;
+}
+#content div.sms{
+	background:url(images/top/back_sms.jpg) no-repeat;
+	width:218px;
+	height:95px;
+	position:absolute;
+	left:63px;
+	top:-68px;
+	z-index:200;
+}
+#content div.sms p{
+	padding:0px;
+	margin:0px;
+	color:#FFE09D;
+	font-size:9px;
+}
+#content div.sms p.first{
+	padding-top:25px;
+	font-size:11px;
+}
+#content div.sms strong{
+	color:#FFFFFF;
+	font-size:24px;
+	font-weight:normal;
+}
+div#back_yellow {
+	width:941px;
+	background:url(images/content/left_side_back_bottom.jpg) no-repeat left bottom;
+	background-color:#FFEFCC;
+	overflow:hidden;
+	padding-bottom:11px;
+}
+div#left_side {
+	width:287px;
+	float:left;
+	color:#FFE09D;
+	background:url(images/content/left_side_back_top.jpg) no-repeat left top;
+	padding-top:63px;
+	position:relative;
+	z-index:1;
+}
+div#left_side div.liders_headline{
+	background:url(images/content/liders.jpg) no-repeat;
+	width:130px;
+	height:34px;
+	position:absolute;
+	left:26px;
+	top:37px;
+	z-index:150;
+}
+div#left_side div.liders{
+	width:234px;
+	height:100px;
+	background-color:#BC1C0E;
+	margin-bottom:1px;
+	position:relative;
+	z-index:100;
+}
+div#left_side div.liders p{
+	margin:0px;
+	padding:0px;
+}
+div#left_side div.liders p.num{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:36px;
+	font-weight:bold;
+	position:absolute;
+	left:6px;
+	top:5px;
+}
+div#left_side div.liders img.foto{
+	position:absolute;
+	top:12px;
+	left:30px;
+}
+div#left_side div.liders p.desc{
+	text-align:left;
+	position:absolute;
+	top:20px;
+	left:120px;
+}
+div#left_side div.liders p.desc a.button_golos{
+	display:block;
+	background-image:url(images/content/button_golos.jpg);
+	width:100px;
+	height:18px;
+	background-repeat:no-repeat;
+	margin-left:4px;
+	margin-top:3px;
+}
+div#text {
+	margin-left:287px;
+	color:#3A3935;
+}
+div#text h1.headline{
+	font-size:18px;
+	font-weight:normal;
+	padding:0px;
+	margin:0px;
+}
+div#text p{
+	text-align:left;
+	text-indent:20px;
+	margin-right:24px;
+	margin-left:25px;
+}
+div#text div#search_form{
+	height:35px;
+	width:583px;
+	background:url(images/content/search_form_left.jpg) no-repeat left;
+	background-color:#FFF9EB;
+	margin-bottom:36px;
+	position:relative;
+}
+div#search_form div.right_side{
+	width:12px;
+	height:35px;
+	background:url(images/content/search_form_right.jpg) no-repeat right;
+	position:absolute;
+	top:0px;
+	right:0px;
+}
+div#new_members {
+	width:605px;
+	background-image:url(images/content/back.gif);
+	padding-top:19px;
+	padding-bottom:10px;
+	position:relative;
+}
+div#new_members div.new_member_headline{
+	background:url(images/content/new_members.jpg) no-repeat;
+	width:330px;
+	height:41px;
+	position:absolute;
+	top:-32px;
+	left:-29px;
+}
+div#new_members div.member{
+	width:508px;
+	height:74px;
+	background-color:#FFEFCC;
+	margin-right:20px;
+	margin-left:77px;
+	margin-top:10px;
+	position:relative;
+}
+div#new_members div.member div.member_foto{
+	position:absolute;
+	left:15px;
+	top:10px;
+}
+div#new_members div.member p.desc_mem{
+	color:#BC1C0E;
+	text-indent:0px;
+	padding:0px;
+	margin:0px;
+	text-align:left;
+	position:absolute;
+	top:10px;
+	left:210px;
+}
+div#new_members div.member a.button_golos_mem{
+	display:block;
+	background:url(images/content/button_member_golos.jpg) no-repeat;
+	width:100px;
+	height:18px;
+	position:absolute;
+	right:40px;
+	top:17px;
+}
+div#new_members div.member a.button_kod_sms{
+	display:block;
+	background:url(images/content/button_kod_sms.jpg) no-repeat;
+	width:100px;
+	height:18px;
+	position:absolute;
+	right:40px;
+	bottom:15px;
+}
+div#new_members div.member div.uzor{
+	background:url(images/content/members_uzor.jpg) no-repeat;
+	width:34px;
+	height:85px;
+	position:absolute;
+	top:-5px;
+	left:-34px;
+}
+div#member_info {
+	height:114px;
+	width:628px;
+	background:url(images/content/uzor_inner_bottom.jpg) repeat-x bottom;
+	padding-bottom:79px;
+	background-color:#FBD8AF;
+	position:relative;
+}
+div#member_info img.foto{
+	position:absolute;
+	top:16px;
+	left:26px;
+}
+div#member_info p.desc{
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	padding:0px;
+	margin:0px;
+	text-indent:0px;
+	text-align:left;
+	position:absolute;
+	top:18px;
+	left:117px;
+}
+div#member_info p.desc span.name{
+	font-size:14px;
+	color:#000000;
+}
+div#member_info p.desc span.lj a{
+	padding-left:3px;
+	font-size:12px;
+	color:#5723B6;
+}
+div#member_info p.desc span.adr{
+	font-size:9px;
+	color:#000000;
+}
+div#member_info p.desc span.votes{
+	color:#000000;
+	font-size:9px;
+	font-weight:bold;
+}
+div#member_info div.desc2{
+	position:absolute;
+	right:20px;
+	top:20px;
+}
+div#member_info div.desc2 p{
+	padding:0px;
+	margin:0px;
+	color:#000000;
+	font-size:12px;
+	padding-right:14px;
+	padding-bottom:10px;
+}
+div#member_info div.desc2 a.banner_in_lj{
+	display:block;
+	color:#000000;
+	padding-top:5px;
+}
+div#member_info div.uzor_left_side{
+	background:url(images/content/uzor_inner_left.jpg) no-repeat;
+	width:47px;
+	height:170px;
+	position:absolute;
+	top:-3px;
+	left:-40px;
+}
+div#text div.big_foto {
+	text-align:left;
+	margin-left:50px;
+	margin-top:-60px;
+	padding-bottom:36px;
+	position:relative;
+}
+div#text div.more_fotos{
+	width:605px;
+	height:85px;
+	background-image:url(images/content/back.gif);
+	position:relative;
+	z-index:100;
+}
+div#text div.other_fotos_headline {
+	background:url(images/content/other_fotos.jpg) no-repeat;
+	width:424px;
+	height:48px;
+	position:absolute;
+	top:-27px;
+	left:-27px;
+}
+/***********************end_content***********************/
+/***********************footer***********************/
+#footer {
+	clear:both;
+	background:url(images/footer/back.gif) repeat-x top;
+	height:128px;
+	width:990px;
+	position:relative;
+}
+#footer div.copyright{
+	color:#B7190D;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+#footer div.partners{
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#footer div.partners img{
+	padding-left:50px;
+}
+#footer div.foot_uzor{
+	background:url(images/footer/foot_uzor.png) no-repeat;
+	width:689px;
+	height:38px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	filter:expression(fixPNG(this));
+}
+#footer_inner {
+	clear:both;
+	background:url(images/footer/back_inner.gif) repeat-x top;
+	height:85px;
+	width:990px;
+	position:relative;
+}
+#footer_inner div.copyright{
+	color:#B7190D;
+	position:absolute;
+	bottom:10px;
+	right:10px;
+}
+#footer_inner div.foot_uzor{
+	background:url(images/footer/foot_uzor.png) no-repeat;
+	width:689px;
+	height:38px;
+	position:absolute;
+	left:0px;
+	bottom:0px;
+	filter:expression(fixPNG(this));
+}
+#footer_inner div.partners{
+	height:52px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+#footer_inner div.partners img{
+	padding-left:50px;
+	padding-top:7px;
+	vertical-align:middle;
+}
+/***********************end_footer***********************/

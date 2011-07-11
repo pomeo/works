@@ -1,0 +1,86 @@
+/***********************top***********************/
+#top.inside {
+	background:url(images/top/back_inside.jpg) no-repeat left;
+}
+h1#logo {
+	width:217px;
+	height:98px;
+	background:url(images/top/logo.png) no-repeat;
+	position:absolute;
+	top:34px;
+	left:50px;
+}
+h1#logo a{
+	display:block;
+	width:217px;
+	height:98px;
+	margin-top:-65px;
+	position:absolute;
+	top:0px;
+	left:0px;
+}
+h1#logo a span{
+	display:none;
+}
+/***********************end_top***********************/
+/***********************content***********************/
+#content.inside {
+	background:url(images/content/back_orel_inside.jpg) no-repeat left top;
+}
+#text div.content{
+	min-height:500px;
+}
+#text div.content h2.title{
+	padding:0px 0px 26px 0px;
+}
+#foto {
+	float:right;
+	padding-left:35px;
+	padding-bottom:35px;
+	text-align:right;
+}
+#foto div.shadow{
+	padding-bottom:9px;
+	background:url(images/content/shadow.jpg) no-repeat bottom right;
+	margin-bottom:8px;
+}
+#foto div.shadow img.foto{
+	border:3px solid #633;
+}
+#text div.content div.content-text{
+	width:98%;
+	overflow:hidden;
+}
+#text div.dotted{
+	padding-bottom:20px;
+}
+#text div.content div.doc{
+	width:98%;
+	overflow:hidden;
+	color:#300;
+}
+#text div.content div.doc img{
+	float:left;
+	padding-right:20px;
+	padding-bottom:20px;
+}
+#text div.content div.doc strong{
+	display:block;
+	padding-bottom:20px;
+}
+#text div.content div.doc p{
+	font-style:italic;
+}
+#text div.content div.doc p a{
+	color:#000;
+}
+#text div.content div.doc p a:visited{
+	color:#D89AFF;
+}
+#menu {
+	padding-top:64px;
+}
+/***********************end_content***********************/
+/***********************footer***********************/
+
+/***********************end_footer***********************/

@@ -1,0 +1,14 @@
+if(typeof sIFR == "function"){
+// This is the preferred "named argument" syntax
+	sIFR.replaceElement(named({sSelector:"h1.name_hotel", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#FAF9F4", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"h3.hotel_city", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#FAF9F4", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"h3.name_hotel", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#EEEEEE", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left&offsetTop=5"}));
+	sIFR.replaceElement(named({sSelector:"h5.type", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#EEEEEE", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left&offsetTop=5"}));
+	sIFR.replaceElement(named({sSelector:"h1.name_razdel", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#FAF9F4", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left&offsetTop=5"}));
+	sIFR.replaceElement(named({sSelector:"h3.name_hotel_desc", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#FAF9F4", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"h5.hotel_desc_place", sFlashSrc:"js/universe.swf", sColor:"#999999", sLinkColor:"#000000", sBgColor:"#FAF9F4", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"strong.preview_name", sFlashSrc:"js/universe.swf", sColor:"#000000", sLinkColor:"#000000", sBgColor:"#FAF9F4", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"#top div.map p.city", sFlashSrc:"js/universe.swf", sColor:"#FFFFFF", sLinkColor:"#000000", sBgColor:"#5A5A5A", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"#top div.map p.country", sFlashSrc:"js/universe.swf", sColor:"#999999", sLinkColor:"#000000", sBgColor:"#5A5A5A", sHoverColor:"#CCCCCC", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+	sIFR.replaceElement(named({sSelector:"ul#menu li span", sFlashSrc:"js/universe.swf", sColor:"#FFFFFF", sLinkColor:"#FFFFFF", sBgColor:"#5A5A5A", sHoverColor:"#FFFFFF", nPaddingTop:0, nPaddingBottom:0, sFlashVars:"textalign=left"}));
+};

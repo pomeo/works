@@ -1,0 +1,240 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+html,body {
+	background:url(images/background.gif) repeat;
+	color:#000;
+	font-size:14px;
+	font-family:"Times New Roman", Times, serif;
+}
+img {
+	border:none;
+}
+a {
+	color:#000;
+	text-decoration:underline;
+}
+a:hover {
+	text-decoration:none;
+}
+#main-block {
+	width:1000px;
+}
+div.right-shadow {
+	padding-right:40px;
+	background:url(images/right-shadow.png) repeat-y right;
+}
+div.left-shadow {
+	padding-left:40px;
+	background:url(images/left-shadow.png) repeat-y left;
+}
+/***********************top***********************/
+#top-shadow {
+	padding-top:36px;
+	width:920px;
+	background:url(images/top-shadow.png) repeat-x top;
+}
+#top {
+	height:334px;
+	background:url(images/top/back.gif) repeat-x;
+	background-color:#fff;
+	padding:0px 40px;
+	position:relative;
+}
+#top div.left-corner{
+	width:40px;
+	height:36px;
+	background:url(images/left_top_corner_shadow.png) no-repeat;
+	position:absolute;
+	top:-36px;
+	left:-40px;
+}
+#top div.right-corner{
+	width:40px;
+	height:36px;
+	background:url(images/right_top_corner_shadow.png) no-repeat;
+	position:absolute;
+	top:-36px;
+	right:-40px;
+}
+#top div.right-shadow{
+	padding:0px;
+	width:40px;
+	height:334px;
+	position:absolute;
+	bottom:0px;
+	right:-40px;
+}
+#top div.left-shadow{
+	padding:0px;
+	width:40px;
+	height:334px;
+	position:absolute;
+	bottom:0px;
+	left:-40px;
+}
+#top a{
+	color:#666;
+	font-size:18px;
+	display:block;
+	text-align:center;
+}
+#top a.covcheg{
+	width:279px;
+	padding-top:95px;
+	position:absolute;
+	left:20px;
+	top:84px;
+}
+#top a.covcheg img{
+	width:279px;
+	height:59px;
+	top:0px;
+	right:0px;
+	position:absolute;
+	filter:expression(fixPNG(this));
+}
+#top a.chasha{
+	width:257px;
+	margin-left:-129px;
+	padding-top:115px;
+	background:url(images/top/chasha.png) no-repeat top center;
+	position:absolute;
+	left:50%;
+	top:64px;
+}
+#top a.supermarket{
+	width:251px;
+	padding-top:94px;
+	position:absolute;
+	right:50px;
+	top:86px;
+}
+#top a.supermarket img{
+	width:251px;
+	height:44px;
+	top:0px;
+	right:0px;
+	position:absolute;
+	filter:expression(fixPNG(this));
+}
+#top div.line-left{
+	width:1px;
+	height:232px;
+	background:url(images/top/line.gif) no-repeat;
+	position:absolute;
+	top:19px;
+	left:315px;
+}
+#top div.line-right{
+	width:1px;
+	height:232px;
+	background:url(images/top/line.gif) no-repeat;
+	position:absolute;
+	top:19px;
+	right:315px;
+}
+/***********************end_top***********************/
+/***********************content***********************/
+#content {
+	width:920px;
+	overflow:hidden;
+	background-color:#fff;
+}
+#text {
+	padding-left:40px;
+	margin-right:360px;
+	text-align:left;
+}
+#text h2.headline{
+	font-size:18px;
+	padding-bottom:20px;
+}
+#text p{
+	padding-bottom:15px;
+}
+#sidebar {
+	float:right;
+	width:280px;
+	padding-right:40px;
+}
+#sidebar div.banner{
+	background-color:#C5D7E1;
+	margin-bottom:30px;
+}
+#sidebar div.banner p{
+	padding:5px 10px;
+	font-size:16px;
+	text-align:left;
+}
+/***********************end_content***********************/
+/***********************footer***********************/
+#bottom-shadow {
+	padding-bottom:37px;
+	background:url(images/bottom-shadow.png) repeat-x bottom center;
+	width:920px;
+}
+#footer {
+	background-color:#fff;
+	clear:both;
+	height:150px;
+	position:relative;
+}
+#footer div.left-corner{
+	width:40px;
+	height:37px;
+	background:url(images/left_bottom_corner_shadow.png) no-repeat;
+	position:absolute;
+	bottom:-37px;
+	left:-40px;
+}
+#footer div.right-corner{
+	width:40px;
+	height:37px;
+	background:url(images/right_bottom_corner_shadow.png) no-repeat;
+	position:absolute;
+	bottom:-37px;
+	right:-40px;
+}
+#footer div.right-shadow{
+	padding:0px;
+	width:40px;
+	height:150px;
+	position:absolute;
+	bottom:0px;
+	right:-40px;
+}
+#footer div.left-shadow{
+	padding:0px;
+	width:40px;
+	height:150px;
+	position:absolute;
+	bottom:0px;
+	left:-40px;
+}
+#footer a.madeby{
+	font-family:Arial, Helvetica, sans-serif;
+	display:block;
+	background:url(images/footer/artprioritet.gif) no-repeat top left;
+	padding-top:25px;
+	text-decoration:none;
+	font-size:10px;
+	color:#CCC;
+	position:absolute;
+	top:80px;
+	left:56px;
+}
+#footer p.copyright{
+	text-align:center;
+	padding-top:90px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#CCC;
+}
+#footer div.counter{
+	position:absolute;
+	right:232px;
+	top:80px;
+}
+/***********************end_footer***********************/

@@ -1,0 +1,207 @@
+html, body{
+	height:100%;
+	background-color:#FFFFFF;
+	margin:0px;
+	padding:0px;
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12px;
+	color:#666666;
+}
+img {
+	border:none;
+}
+a {
+	color:#666666;
+	text-decoration:none;
+}
+/**********************top**********************/
+#top {
+	background-color:#FFFFFF;
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+	width:882px;
+}
+#top_box {
+	width:758px;
+	height:163px;
+	border-bottom:#ADADAD 1px solid;
+}
+#philipp_belov {
+	background-image:url(images/top/philipp_belov.jpg);
+	background-repeat:no-repeat;
+	background-position:left bottom;
+	padding-top:45px;
+	width:573px;
+	height:14px;
+}
+#work_about_contact {
+	background-image:url(images/top/work_about_contact.jpg);
+	width:573px;
+	height:40px;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	padding-top:11px;
+	margin-bottom:23px;
+	position:relative;
+}
+#work_about_contact2 {
+	background-image:url(images/top/work_about_contact2.jpg);
+	width:573px;
+	height:40px;
+	background-repeat:no-repeat;
+	background-position:bottom;
+	padding-top:11px;
+	margin-bottom:23px;
+	position:relative;
+}
+#work_about_contact a.work{
+	display:block;
+	width:158px;
+	height:38px;
+	position:absolute;
+	top:12px;
+	left:0px;
+}
+#work_about_contact2 a.work{
+	display:block;
+	width:158px;
+	height:38px;
+	position:absolute;
+	top:12px;
+	left:0px;
+}
+#work_about_contact a.about_contact{
+	display:block;
+	width:414px;
+	height:38px;
+	position:absolute;
+	top:12px;
+	right:0px;
+}
+#work_about_contact2 a.about_contact{
+	display:block;
+	width:414px;
+	height:38px;
+	position:absolute;
+	top:12px;
+	right:0px;
+}
+#quicktime {
+	height:20px;
+	text-align:right;
+	vertical-align:middle;
+}
+#quicktime img{
+	vertical-align:middle;
+}
+#quicktime a{
+	font-weight:bold;
+}
+/**********************end_top**********************/
+/**********************content**********************/
+#content {
+	background-color:#FFFFFF;
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+	width:882px;
+}
+#content .content_box{
+	width:758px;
+	border-bottom:#ADADAD 1px solid;
+}
+#content .content_box .headline{
+	height:13px;
+	padding-top:13px;
+}
+#content .content_box .headline .quicktime{
+	width:95px;
+	height:10px;
+	background-image:url(images/content/quicktime.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	float:right;
+}
+#content .content_box .headline .storyboard{
+	background-image:url(images/content/storyboard.jpg);
+	width:111px;
+	height:10px;
+	background-repeat:no-repeat;
+	background-position:top;
+	float:right;
+}
+#content .content_box .headline .h{
+	height:14px;
+	font-size:14px;
+	float:left;
+	text-align:left;
+	margin-top:-4px;
+}
+#content .content_box .headline .h strong{
+	font-weight:normal;
+	color:#000000;
+}
+#content .content_box .works{
+	text-align:left;
+	margin-top:10px;
+	margin-bottom:13px;
+	border:#333333 1px solid;
+	font-size:0px;
+}
+#content .content_box .works a img{
+	margin-right:2px;
+}
+#content .content_box .works a img.last{
+	margin:0px;
+}
+#content .content_box p{
+	margin-left:1px;
+	margin:0px;
+	padding:0px;
+	text-align:left;
+	font-size:14px;
+	padding-bottom:2px;
+}
+#content .content_box p.name{
+	padding-top:18px;
+	padding-bottom:20px;
+	font-size:18px;
+	color:#000000;
+}
+#content .content_box p strong{
+	font-weight:normal;
+	color:#000000;
+}
+#content .content_box p.contlast strong a{
+	color:#000000;
+}
+#content .content_box p.last{
+	padding-bottom:35px;
+}
+#content .content_box .contact{
+	background-image:url(images/content/contact.jpg);
+	height:19px;
+	padding-top:31px;
+	margin-bottom:27px;
+	background-repeat:no-repeat;
+	background-position:bottom left;
+	text-align:left;
+}
+#content .content_box p.contlast{
+	padding-bottom:65px;
+}
+/**********************end_content**********************/
+/**********************footer**********************/
+#footer {
+	width:882px;
+	background-color:#FFFFFF;
+	border-left:#CCCCCC 1px solid;
+	border-right:#CCCCCC 1px solid;
+}
+#footer_box{
+	text-align:right;
+	width:758px;
+	height:12px;
+	padding-top:54px;
+	padding-bottom:22px;
+}
+/**********************end_footer**********************/

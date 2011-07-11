@@ -1,0 +1,255 @@
+* {
+	margin:0px;
+	padding:0px;
+}
+html,body {
+	background-color:#1A1A1A;
+	font-family:Verdana, Geneva, Arial, Helvetica, sans-serif;
+	color:#bbb;
+	font-size:14px;
+}
+img {
+	border:none;
+}
+a {
+	color:#fff;
+	text-decoration:none;
+}
+a:hover {
+	border-bottom:1px dotted;
+}
+a:focus {
+	outline:none;
+}
+p {
+	line-height:1.4em;
+	text-indent:1.5em;
+}
+#main-block {
+	min-width:946px;
+	max-width:1000px;
+	margin:27px auto;
+}
+/***********************content***********************/
+#sidebar {
+	float:right;
+	width:156px;
+}
+#sidebar ul.menu{
+	list-style:none;
+	text-align:left;
+}
+#sidebar ul.menu li{
+	width:151px;
+	height:24px;
+	background-color:#333;
+	margin-bottom:8px;
+}
+#sidebar ul.menu li a{
+	background-color:#333;
+	display:block;
+	width:141px;
+	height:21px;
+	padding-left:10px;
+	padding-top:3px;
+	font-size:0.9em;
+	color:#888;
+}
+#sidebar ul.menu li span{
+	background-color:#333;
+	display:block;
+	width:141px;
+	height:21px;
+	padding-left:10px;
+	padding-top:3px;
+	font-size:0.9em;
+	color:#ff8;
+}
+#sidebar ul.menu li a:hover{
+	border:none;
+}
+#counters a{
+	padding-bottom:7px;
+	display:block;
+}
+#counters a:hover{
+	border:none;
+}
+#wrapper {
+	margin-right:182px;
+	padding:14px;
+	background-color:#333;
+	border-top:#AAD35D solid 3px;
+	text-align:left;
+}
+#wrapper h1.title{
+	padding-bottom:11px;
+	margin-bottom:11px;
+	border-bottom:#444 1px solid;
+	font-weight:normal;
+	font-size:1.3em;
+}
+#wrapper div.rubber-works {
+	height:0px;
+	font-size:0px;
+	clear:left;
+}
+#left-side {
+	float:left;
+	width:361px;
+}
+#left-side h1.title{
+	margin-bottom:0px;
+}
+ul#works {
+	list-style:none;
+}
+ul#works li.project-list{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:1em;
+	color:#888;
+}
+ul#works li.project-list a.project{
+	display:block;
+	background-color:#333;
+	height:20px;
+	width:351px;
+	color:#888;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:1em;
+	padding:9px 0px 9px 10px;
+	border-top:1px solid #444;
+	margin-top:-1px;
+	cursor:pointer;
+}
+ul#works li.project-list a.project:hover{
+	border-bottom:none;
+}
+ul#works li.project-list a.project span{
+	float:left;
+}
+ul#works li.project-list a.project strong{
+	color:#555;
+	font-size:0.8em;
+	float:right;
+	font-weight:normal;
+	padding-top:0.1em;
+}
+ul#works li.project-list ul.second{
+	display:none;
+	padding:10px 20px 10px 130px;
+	list-style:none;
+}
+ul#works li.project-list ul.second li{
+	color:#bbb;
+	font-size:0.8em;
+	clear:both;
+}
+ul#works li.project-list ul.second li.desc{
+	padding-top:20px;
+}
+ul#works a.show-project{
+	color:#bbb;
+}
+ul#works a.show-project:hover{
+	color:#fff;
+}
+ul#works li.project-preview{
+	display:inline;
+}
+ul#works li.project-preview a,ul#works li.project-preview img{
+	float:left;
+	margin-left:-115px;
+	margin-bottom:-110px;
+	padding:1px;
+	border:1px #333 solid;
+}
+ul#works li.project-preview a:hover{
+	border:1px #fff solid;
+}
+ul#works li.project-preview a img{
+	width:100px;
+	height:100px;
+}
+ul#works li.porfolio-link{
+	border-top:5px solid #444;
+}
+ul#works li.portfolio-link a{
+	display:block;
+	text-align:right;
+	color:#888;
+	width:341px;
+	font-size:0.8em;
+	padding:9px 10px 0px 10px;
+	border-top:1px solid #444;
+	margin-top:-1px;
+}
+ul#works li.portfolio-link a:hover{
+	color:#ff8;
+	border-bottom:none;
+}
+#right-side {
+	margin-left:375px;
+}
+#right-side.blog-post {
+	margin-left:0px;
+}
+#right-side h2.headline-blog,#right-side h2.headline-blog-post{
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight:normal;
+	font-size:1.2em;
+	padding-bottom:3px;
+	color:#fff;
+	border-bottom:1px solid #83A23B;
+}
+#right-side h2.headline-blog a:hover{
+	border:none;
+	color:#ff8;
+}
+#right-side h2.headline-blog-post{
+	padding-bottom:7px;
+	margin-bottom:4px;
+}
+#right-side div.desc{
+	font-size:0.7em;
+	color:#888;
+	width:98.5%;
+	position:relative;
+}
+#right-side div.desc a{
+	color:#888;
+}
+#right-side div.desc a:hover{
+	color:#ff8;
+	border:none;
+}
+#right-side div.desc span.date{
+	color:#888;
+	position:absolute;
+	right:0px;
+}
+#right-side div.desc a.comments{
+	position:absolute;
+	right:0px;
+}
+#right-side div.intro{
+}
+#right-side div.more{
+	text-align:right;
+	margin-bottom:11px;
+}
+#right-side div.more a{
+	font-size:0.8em;
+}
+#right-side div.more a:hover{
+	color:#ff8;
+}
+#right-side ol,#right-side div.blog-content ol,#right-side div.blog-content ul{
+	padding-left:3em;
+}
+#right-side div.blog-content a.noun:hover{
+	border:none;
+}
+/***********************end_content***********************/

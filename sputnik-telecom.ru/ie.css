@@ -1,0 +1,39 @@
+div.cam {
+	filter:expression(fixPNG(this));
+}
+#top-logo div.trubka{
+	filter:expression(fixPNG(this));
+}
+#left-side {
+	margin-left:27px;
+	margin-bottom:0px;
+}
+#text {
+	position:relative;
+}
+#text div.line{
+	width:100%;
+	position:absolute;
+	left:-1px;
+	top:0px;
+}
+#text div.under-h2{
+	height:22px;
+	width:22px;
+	position:absolute;
+	top:40px;
+	left:-1px;
+}
+#text div.content{
+	padding-top:91px;
+}
+#menu-main li ul{
+	display:none;
+	padding-right:5px;
+	padding-bottom:0px;
+}
+#menu-main li ul li.last img{
+	position:absolute;
+	right:-5px;
+	bottom:-8px;
+}
