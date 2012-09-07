@@ -1,0 +1,129 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" media="all" href="styles.css" />
+  </head>
+  <body>
+    <ul class="b-share">
+      <li class="b-share-item">
+        <a class="b-share-item-a" href="#" title="Позвать друзей">Позвать друзей</a>
+      </li>
+      <li class="b-share-item">
+        <a class="b-share-item-share" href="#" title="Share">Share</a>
+      </li>
+      <li class="b-share-item">
+        <a class="b-share-item-print" href="#" title="Распечатать">Распечатать</a>
+      </li>
+    </ul>
+    <ul class="b-products">
+      <li class="b-products-item">
+        <a class="b-products-item-link b-products-item-link-a1" href="#"></a>
+      </li>
+      <li class="b-products-item">
+        <a class="b-products-item-link b-products-item-link-a2" href="#"></a>
+      </li>
+      <li class="b-products-item">
+        <a class="b-products-item-link b-products-item-link-a3 active" href="#"></a>
+      </li>
+      <li class="b-products-item">
+        <a class="b-products-item-link b-products-item-link-a4" href="#"></a>
+      </li>
+      <li class="b-products-item">
+        <a class="b-products-item-link b-products-item-link-a5" href="#"></a>
+      </li>
+      <li class="b-products-item">
+        <a class="b-products-item-link b-products-item-link-a6" href="#"></a>
+      </li>
+    </ul>
+    <!-- добавление класса g-a{1,6} меняет цвет фона за бутылкой, бутылку и цвет шрифта -->
+    <div class="b-content g-a3 zoom">
+      <div class="b-desc">
+        <h1 class="b-desc-header">Полусухое</h1>
+        <p class="b-desc-text">Для тех, кто чтит традиции русского шампанского – полусухое классическое шампанское вино, приятное, легкое, ароматное, великолепное и эталонное. Насладись им под фондю из фруктов и сыров.</p>
+      </div>
+      <div class="g-bottle"></div>
+      <ul class="b-menu">
+        <li class="b-menu-item">
+          <a class="b-menu-item-link" href="#">Условия акции</a>
+        </li>
+        <li class="b-menu-item">
+          <a class="b-menu-item-link" href="#">Личный кабинет</a>
+        </li>
+        <li class="b-menu-item">
+          <a class="b-menu-item-link active" href="#">Victor Dravigny</a>
+        </li>
+        <li class="b-menu-item">
+          <a class="b-menu-item-link" href="#">Создать встречу</a>
+        </li>
+      </ul>
+      <div class="b-footer">
+        <ul class="b-footer-links">
+          <li class="b-footer-links-item">
+            <a class="b-footer-links-item-a" href="#">Промо</a>
+          </li>
+          <li class="b-footer-links-item">
+            <a class="b-footer-links-item-a" href="#">Рейтинг</a>
+          </li>
+          <li class="b-footer-links-item">
+            <a class="b-footer-links-item-a" href="#">Баллы</a>
+          </li>
+        </ul>
+        <form class="b-footer-promokod" method="post" action="#">
+          <input class="b-footer-promokod-in" type="text" name="" value="" />
+          <input class="b-footer-promokod-name" type="submit" value="ПРОМО КОД" />
+        </form>
+        <a class="b-footer-logo"></a>
+      </div>
+    </div>
+    <script>
+      window.onload = resize;
+      window.onresize = resize;
+      if (typeof document.getElementsByClassName!='function') {
+          document.getElementsByClassName = function() {
+              var elms = document.getElementsByTagName('*');
+              var ei = new Array();
+              for (i=0;i<elms.length;i++) {
+                  if (elms[i].getAttribute('class')) {
+                      ecl = elms[i].getAttribute('class').split(' ');
+                      for (j=0;j<ecl.length;j++) {
+                          if (ecl[j].toLowerCase() == arguments[0].toLowerCase()) {
+                              ei.push(elms[i]);
+                          }
+                      }
+                  } else if (elms[i].className) {
+                      ecl = elms[i].className.split(' ');
+                      for (j=0;j<ecl.length;j++) {
+                          if (ecl[j].toLowerCase() == arguments[0].toLowerCase()) {
+                              ei.push(elms[i]);
+                          }
+                      }
+                  }
+              }
+              return ei;
+          }
+      }
+      function resize(){
+        var zwidth = ((Math.round((document.documentElement.clientWidth - 810)/12)/100)+1);
+        var zheight = ((Math.round((document.documentElement.clientHeight - 520)/12)/100)+1);
+        var zcontent = document.getElementsByClassName('b-content')[0];
+        var zo = document.getElementsByClassName('zoom');
+        var html = document.documentElement;
+        zo[0].style.width = html.clientWidth/zwidth + "px";
+        for (var i = 0; i < zo.length; i++) {
+          if ((zwidth > 0)&&(zheight > 0)){
+            if (navigator.appName == 'Microsoft Internet Explorer'){
+              zo[i].style.filter = 'progid:DXImageTransform.Microsoft.Matrix(M11=' + zwidth + ', M12=0, M21=0, M22=' + zwidth + ', SizingMethod="auto expand"")';
+            } else {
+              zo[i].style.zoom = zwidth;
+              zo[i].style.MozTransform = 'scale('+zwidth+')';
+              zo[i].style.OTransform = 'scale('+zwidth+')';
+              //zo[i].style.WebkitTransform = 'scale('+zwidth+')';
+            }
+          }
+        }
+      }
+    </script>
+  </body>
+</html>
